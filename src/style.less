@@ -1,0 +1,221 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
+
+.clocks-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//The initital .radial-progress is the smaller one inside
+.radial-progress {
+	@circle-size: 240px;
+	@circle-background: #451f1c;
+	@circle-color: #eb433a;
+	@inset-size: 180px;
+	@inset-color: #0d1212;
+	@transition-length: 1s;
+	@shadow: 6px 6px 10px rgba(0,0,0,0);
+	@percentage-font-size: 22px;
+	@percentage-text-width: 57px;
+
+  position: absolute;
+
+	width:  @circle-size;
+	height: @circle-size;
+
+	background-color: @circle-background;
+	border-radius: 50%;
+  .percentage {
+    height:   @percentage-font-size;
+    width:    @percentage-text-width;
+    overflow: hidden;
+    position: absolute;
+
+    left: 50%;
+    z-index: 5;
+    transform: translateX(-100%);
+    top: 8px;
+
+    line-height: 1;
+    .numbers {
+      margin-top: -@percentage-font-size;
+      transition: width @transition-length;
+      span {
+        width:          @percentage-text-width;
+        display:        inline-block;
+        vertical-align: top;
+        text-align:     center;
+        font-weight:    800;
+        font-size:      @percentage-font-size;
+        font-family:    "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+    }
+  }
+	.circle {
+		.mask, .fill, .shadow {
+			width:    @circle-size;
+			height:   @circle-size;
+			position: absolute;
+			border-radius: 50%;
+		}
+		.shadow {
+			box-shadow: @shadow inset;
+		}
+		.mask, .fill {
+			-webkit-backface-visibility: hidden;
+			transition: -webkit-transform @transition-length;
+			transition: -ms-transform @transition-length;
+			transition: transform @transition-length;
+			border-radius: 50%;
+		}
+		.mask {
+			clip: rect(0px, @circle-size, @circle-size, @circle-size/2);
+			.fill {
+				clip: rect(0px, @circle-size/2, @circle-size, 0px);
+				background-color: @circle-color;
+			}
+		}
+	}
+	.inset {
+		width:       @inset-size;
+		height:      @inset-size;
+		position:    absolute;
+		margin-left: (@circle-size - @inset-size)/2;
+		margin-top:  (@circle-size - @inset-size)/2;
+
+		background-color: @inset-color;
+		border-radius: 50%;
+		box-shadow: @shadow;
+	}
+
+	@i: 0;
+	@increment: 180deg / 100;
+	.loop (@i) when (@i <= 100) {
+		&[data-progress="@{i}"] {
+			.circle {
+				.mask.full, .fill {
+					-webkit-transform: rotate(@increment * @i);
+					-ms-transform: rotate(@increment * @i);
+					transform: rotate(@increment * @i);
+				}
+				.fill.fix {
+					-webkit-transform: rotate(@increment * @i * 2);
+					-ms-transform: rotate(@increment * @i * 2);
+					transform: rotate(@increment * @i * 2);
+				}
+			}
+			.percentage .numbers {
+				width: @i * @percentage-text-width + @percentage-text-width;
+			}
+		}
+		.loop(@i + 1);
+	}
+	.loop(@i);
+}
+
+.radial-progress.small {
+  z-index: 5;
+}
+
+.radial-progress.large {
+	@circle-size: 300px;
+	@circle-color: #a6d8d8;
+	@inset-size: 240px;
+  position: relative;
+	width:  @circle-size;
+	height: @circle-size;
+  .percentage {
+    .numbers {
+      span {
+      }
+    }
+  }
+	.circle {
+		.mask, .fill, .shadow {
+			width:    @circle-size;
+			height:   @circle-size;
+		}
+		.shadow {
+		}
+		.mask, .fill {
+		}
+		.mask {
+			clip: rect(0px, @circle-size, @circle-size, @circle-size/2);
+			.fill {
+				clip: rect(0px, @circle-size/2, @circle-size, 0px);
+				background-color: @circle-color;
+			}
+		}
+	}
+	.inset {
+		width:       @inset-size;
+		height:      @inset-size;
+		margin-left: (@circle-size - @inset-size)/2;
+		margin-top:  (@circle-size - @inset-size)/2;
+	}
+}
+
+.radial-progress.dark {
+  @percentage-color: #ffffff;
+  .percentage {
+    .numbers {
+      span {
+        color: @percentage-color;
+      }
+    }
+  }
+}
+
+.radial-progress.large.dark {
+  @circle-background: #334444;
+  background-color: @circle-background;
+
+}
+
+
+.radial-progress.light {
+  @percentage-color: #0d1212;
+  .percentage {
+    .numbers {
+      span {
+        color: @percentage-color;
+      }
+    }
+  }
+}
+
+.radial-progress.large.light {
+	@circle-background: #e8f5f5;
+	@circle-color: #a6d8d8;
+	background-color: @circle-background;
+  .percentage {
+    .numbers {
+      span {
+      }
+    }
+  }
+	.circle {
+		.mask {
+			.fill {
+				background-color: @circle-color;
+			}
+		}
+	}
+}
+
+.radial-progress.small.light {
+	@circle-background: #fbd0ce;
+	@circle-color: #eb433a;
+	@inset-color: #ffffff;
+	background-color: @circle-background;
+	.circle {
+		.mask {
+			.fill {
+				background-color: @circle-color;
+			}
+		}
+	}
+	.inset {
+		background-color: @inset-color;
+	}
+}
