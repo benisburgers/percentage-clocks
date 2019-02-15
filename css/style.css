@@ -69,6 +69,14 @@
   height: 240px;
   border-radius: 50%;
 }
+.radial-progress span {
+  font-weight: 800;
+  font-size: 22px;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+}
 .radial-progress .percentage {
   height: 22px;
   width: 57px;
@@ -86,12 +94,6 @@
 }
 .radial-progress .percentage .numbers span {
   width: 57px;
-  display: inline-block;
-  vertical-align: top;
-  text-align: center;
-  font-weight: 800;
-  font-size: 22px;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .radial-progress .circle .mask,
 .radial-progress .circle .fill,
@@ -126,6 +128,9 @@
   margin-top: 30px;
   border-radius: 50%;
   box-shadow: 6px 6px 10px rgba(0, 0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .radial-progress[data-progress="0"] .circle .mask.full,
 .radial-progress[data-progress="0"] .circle .fill {
@@ -1541,65 +1546,41 @@
 .radial-progress[data-progress="100"] .percentage .numbers {
   width: 5757px;
 }
-.radial-progress.small {
-  z-index: 5;
+.radial-progress span {
+  color: inherit;
 }
-.radial-progress.large {
+.radial-progress.inner {
+  z-index: 5;
+  background-color: rgba(230, 70, 64, 0.25);
+}
+.radial-progress.inner .circle .mask .fill {
+  background-color: rgba(230, 70, 64);
+}
+.radial-progress.inner .inset {
+  background-color: #ffffff;
+}
+.radial-progress.outer {
+  background-color: rgba(170, 217, 216, 0.25);
   position: relative;
   width: 300px;
   height: 300px;
 }
-.radial-progress.large .circle .mask,
-.radial-progress.large .circle .fill,
-.radial-progress.large .circle .shadow {
+.radial-progress.outer .circle .mask,
+.radial-progress.outer .circle .fill,
+.radial-progress.outer .circle .shadow {
   width: 300px;
   height: 300px;
 }
-.radial-progress.large .circle .mask {
+.radial-progress.outer .circle .mask {
   clip: rect(0px, 300px, 300px, 150px);
 }
-.radial-progress.large .circle .mask .fill {
+.radial-progress.outer .circle .mask .fill {
+  background-color: rgba(170, 217, 216);
   clip: rect(0px, 150px, 300px, 0px);
 }
-.radial-progress.large .inset {
+.radial-progress.outer .inset {
   width: 240px;
   height: 240px;
   margin-left: 30px;
   margin-top: 30px;
-}
-.radial-progress.dark .percentage .numbers span {
-  color: #ffffff;
-}
-.radial-progress.small.dark {
-  background-color: #451f1c;
-}
-.radial-progress.small.dark .circle .mask .fill {
-  background-color: #eb433a;
-}
-.radial-progress.small.dark .inset {
-  background-color: #0d1212;
-}
-.radial-progress.large.dark {
-  background-color: #334444;
-}
-.radial-progress.large.dark .circle .mask .fill {
-  background-color: #a6d8d8;
-}
-.radial-progress.light .percentage .numbers span {
-  color: #0d1212;
-}
-.radial-progress.small.light {
-  background-color: #fbd0ce;
-}
-.radial-progress.small.light .circle .mask .fill {
-  background-color: #eb433a;
-}
-.radial-progress.small.light .inset {
-  background-color: #ffffff;
-}
-.radial-progress.large.light {
-  background-color: #e8f5f5;
-}
-.radial-progress.large.light .circle .mask .fill {
-  background-color: #a6d8d8;
 }

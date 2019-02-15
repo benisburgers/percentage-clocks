@@ -21,6 +21,15 @@
 	height: @circle-size;
 
 	border-radius: 50%;
+
+  span {
+    font-weight:    800;
+    font-size:      @percentage-font-size;
+    font-family:    "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    display:        inline-block;
+    vertical-align: top;
+    text-align:     center;
+  }
   .percentage {
     height:   @percentage-font-size;
     width:    @percentage-text-width;
@@ -38,12 +47,6 @@
       transition: width @transition-length;
       span {
         width:          @percentage-text-width;
-        display:        inline-block;
-        vertical-align: top;
-        text-align:     center;
-        font-weight:    800;
-        font-size:      @percentage-font-size;
-        font-family:    "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
       }
     }
   }
@@ -80,6 +83,10 @@
 
 		border-radius: 50%;
 		box-shadow: @shadow;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 	}
 	@i: 0;
 	@increment: 180deg / 100;
@@ -104,15 +111,37 @@
 		.loop(@i + 1);
 	}
 	.loop(@i);
+
+  @percentage-color: inherit;
+  span {
+    color: @percentage-color;
+  }
 }
 
-.radial-progress.small {
+.radial-progress.inner {
   z-index: 5;
+  @circle-background: rgba(230, 70, 64, 0.25);
+  @circle-color: rgba(230, 70, 64);
+  @inset-color: #ffffff;
+  background-color: @circle-background;
+  .circle {
+    .mask {
+      .fill {
+        background-color: @circle-color;
+      }
+    }
+  }
+  .inset {
+    background-color: @inset-color;
+  }
 }
 
-.radial-progress.large {
+.radial-progress.outer {
 	@circle-size: 300px;
 	@inset-size: 240px;
+  @circle-background: rgba(170, 217, 216, 0.25);
+  @circle-color: rgba(170, 217, 216);
+  background-color: @circle-background;
   position: relative;
 	width:  @circle-size;
 	height: @circle-size;
@@ -124,6 +153,7 @@
 		.mask {
 			clip: rect(0px, @circle-size, @circle-size, @circle-size/2);
 			.fill {
+        background-color: @circle-color;
 				clip: rect(0px, @circle-size/2, @circle-size, 0px);
 			}
 		}
@@ -133,87 +163,5 @@
 		height:      @inset-size;
 		margin-left: (@circle-size - @inset-size)/2;
 		margin-top:  (@circle-size - @inset-size)/2;
-	}
-}
-
-.radial-progress.dark {
-  @percentage-color: #ffffff;
-  .percentage {
-    .numbers {
-      span {
-        color: @percentage-color;
-      }
-    }
-  }
-}
-
-.radial-progress.small.dark {
-  @circle-background: #451f1c;
-  @circle-color: #eb433a;
-  @inset-color: #0d1212;
-  background-color: @circle-background;
-  .circle {
-		.mask {
-			.fill {
-				background-color: @circle-color;
-			}
-		}
-	}
-  .inset {
-    background-color: @inset-color;
-  }
-}
-
-.radial-progress.large.dark {
-  @circle-background: #334444;
-  @circle-color: #a6d8d8;
-  background-color: @circle-background;
-  .circle {
-		.mask {
-			.fill {
-				background-color: @circle-color;
-			}
-		}
-	}
-}
-
-.radial-progress.light {
-  @percentage-color: #0d1212;
-  .percentage {
-    .numbers {
-      span {
-        color: @percentage-color;
-      }
-    }
-  }
-}
-
-.radial-progress.small.light {
-	@circle-background: #fbd0ce;
-	@circle-color: #eb433a;
-	@inset-color: #ffffff;
-	background-color: @circle-background;
-	.circle {
-		.mask {
-			.fill {
-				background-color: @circle-color;
-			}
-		}
-	}
-	.inset {
-		background-color: @inset-color;
-	}
-}
-
-.radial-progress.large.light {
-	@circle-background: #e8f5f5;
-	@circle-color: #a6d8d8;
-	background-color: @circle-background;
-	.circle {
-		.mask {
-			.fill {
-				background-color: @circle-color;
-			}
-		}
 	}
 }
