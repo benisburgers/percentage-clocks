@@ -26,6 +26,8 @@
 
   <!-- Add your site or application content here -->
 
+	<!-- setupRing(inner, outer, term) -->
+
   <?php setupRing(99, 93, 'Middle & Top Management'); ?>
   <?php setupRing(98, 91, 'All Management Levels'); ?>
   <?php setupRing(96, 87, 'All Employees'); ?><?php setupRing(99, 93, 'Middle & Top Management'); ?>

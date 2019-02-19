@@ -23,7 +23,7 @@
 
 //The initital .radial-progress is the smaller one inside
 .radial-progress {
-	@transition-length: 1s;
+	@transition-length: 2s;
 	@shadow: 6px 6px 10px rgba(0,0,0,0);
 	@percentage-font-size: 22px;
 	@percentage-text-width: 57px;
@@ -53,6 +53,7 @@
     .numbers {
       margin-top: -@percentage-font-size;
       transition: width @transition-length;
+      width: 0;
       span {
         width: @percentage-text-width;
       }
@@ -134,9 +135,11 @@
 					transform: rotate(@increment * @i * 2);
 				}
 			}
-			.percentage .numbers {
-				width: @i * @percentage-text-width + @percentage-text-width;
-			}
+      .percentage.visible {
+        .numbers {
+          width: @i * @percentage-text-width + @percentage-text-width;
+        }
+      }
 		}
 		.loop(@i + 1);
 	}
@@ -192,7 +195,7 @@
 					transform: rotate(@increment * @i * 2);
 				}
 			}
-			.percentage .numbers {
+			.percentage.visible .numbers {
 				width: @i * @percentage-text-width + @percentage-text-width;
 			}
 		}

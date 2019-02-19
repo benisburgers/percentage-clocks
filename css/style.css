@@ -96,7 +96,8 @@
 }
 .radial-progress .percentage .numbers {
   margin-top: -22px;
-  transition: width 1s;
+  transition: width 2s;
+  width: 0;
 }
 .radial-progress .percentage .numbers span {
   width: 57px;
@@ -113,9 +114,9 @@
 .radial-progress .circle .mask,
 .radial-progress .circle .fill {
   -webkit-backface-visibility: hidden;
-  transition: -webkit-transform 1s;
-  transition: -ms-transform 1s;
-  transition: transform 1s;
+  transition: -webkit-transform 2s;
+  transition: -ms-transform 2s;
+  transition: transform 2s;
   border-radius: 50%;
 }
 .radial-progress .inset {
@@ -164,7 +165,7 @@
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
 }
-.radial-progress.outer[data-progress="0"] .percentage .numbers {
+.radial-progress.outer[data-progress="0"] .percentage.visible .numbers {
   width: 57px;
 }
 .radial-progress.outer[data-progress="1"] .circle.visible .mask.full,
@@ -178,7 +179,7 @@
   -ms-transform: rotate(3.6deg);
   transform: rotate(3.6deg);
 }
-.radial-progress.outer[data-progress="1"] .percentage .numbers {
+.radial-progress.outer[data-progress="1"] .percentage.visible .numbers {
   width: 114px;
 }
 .radial-progress.outer[data-progress="2"] .circle.visible .mask.full,
@@ -192,7 +193,7 @@
   -ms-transform: rotate(7.2deg);
   transform: rotate(7.2deg);
 }
-.radial-progress.outer[data-progress="2"] .percentage .numbers {
+.radial-progress.outer[data-progress="2"] .percentage.visible .numbers {
   width: 171px;
 }
 .radial-progress.outer[data-progress="3"] .circle.visible .mask.full,
@@ -206,7 +207,7 @@
   -ms-transform: rotate(10.8deg);
   transform: rotate(10.8deg);
 }
-.radial-progress.outer[data-progress="3"] .percentage .numbers {
+.radial-progress.outer[data-progress="3"] .percentage.visible .numbers {
   width: 228px;
 }
 .radial-progress.outer[data-progress="4"] .circle.visible .mask.full,
@@ -220,7 +221,7 @@
   -ms-transform: rotate(14.4deg);
   transform: rotate(14.4deg);
 }
-.radial-progress.outer[data-progress="4"] .percentage .numbers {
+.radial-progress.outer[data-progress="4"] .percentage.visible .numbers {
   width: 285px;
 }
 .radial-progress.outer[data-progress="5"] .circle.visible .mask.full,
@@ -234,7 +235,7 @@
   -ms-transform: rotate(18deg);
   transform: rotate(18deg);
 }
-.radial-progress.outer[data-progress="5"] .percentage .numbers {
+.radial-progress.outer[data-progress="5"] .percentage.visible .numbers {
   width: 342px;
 }
 .radial-progress.outer[data-progress="6"] .circle.visible .mask.full,
@@ -248,7 +249,7 @@
   -ms-transform: rotate(21.6deg);
   transform: rotate(21.6deg);
 }
-.radial-progress.outer[data-progress="6"] .percentage .numbers {
+.radial-progress.outer[data-progress="6"] .percentage.visible .numbers {
   width: 399px;
 }
 .radial-progress.outer[data-progress="7"] .circle.visible .mask.full,
@@ -262,7 +263,7 @@
   -ms-transform: rotate(25.2deg);
   transform: rotate(25.2deg);
 }
-.radial-progress.outer[data-progress="7"] .percentage .numbers {
+.radial-progress.outer[data-progress="7"] .percentage.visible .numbers {
   width: 456px;
 }
 .radial-progress.outer[data-progress="8"] .circle.visible .mask.full,
@@ -276,7 +277,7 @@
   -ms-transform: rotate(28.8deg);
   transform: rotate(28.8deg);
 }
-.radial-progress.outer[data-progress="8"] .percentage .numbers {
+.radial-progress.outer[data-progress="8"] .percentage.visible .numbers {
   width: 513px;
 }
 .radial-progress.outer[data-progress="9"] .circle.visible .mask.full,
@@ -290,7 +291,7 @@
   -ms-transform: rotate(32.4deg);
   transform: rotate(32.4deg);
 }
-.radial-progress.outer[data-progress="9"] .percentage .numbers {
+.radial-progress.outer[data-progress="9"] .percentage.visible .numbers {
   width: 570px;
 }
 .radial-progress.outer[data-progress="10"] .circle.visible .mask.full,
@@ -304,7 +305,7 @@
   -ms-transform: rotate(36deg);
   transform: rotate(36deg);
 }
-.radial-progress.outer[data-progress="10"] .percentage .numbers {
+.radial-progress.outer[data-progress="10"] .percentage.visible .numbers {
   width: 627px;
 }
 .radial-progress.outer[data-progress="11"] .circle.visible .mask.full,
@@ -318,7 +319,7 @@
   -ms-transform: rotate(39.6deg);
   transform: rotate(39.6deg);
 }
-.radial-progress.outer[data-progress="11"] .percentage .numbers {
+.radial-progress.outer[data-progress="11"] .percentage.visible .numbers {
   width: 684px;
 }
 .radial-progress.outer[data-progress="12"] .circle.visible .mask.full,
@@ -332,7 +333,7 @@
   -ms-transform: rotate(43.2deg);
   transform: rotate(43.2deg);
 }
-.radial-progress.outer[data-progress="12"] .percentage .numbers {
+.radial-progress.outer[data-progress="12"] .percentage.visible .numbers {
   width: 741px;
 }
 .radial-progress.outer[data-progress="13"] .circle.visible .mask.full,
@@ -346,7 +347,7 @@
   -ms-transform: rotate(46.8deg);
   transform: rotate(46.8deg);
 }
-.radial-progress.outer[data-progress="13"] .percentage .numbers {
+.radial-progress.outer[data-progress="13"] .percentage.visible .numbers {
   width: 798px;
 }
 .radial-progress.outer[data-progress="14"] .circle.visible .mask.full,
@@ -360,7 +361,7 @@
   -ms-transform: rotate(50.4deg);
   transform: rotate(50.4deg);
 }
-.radial-progress.outer[data-progress="14"] .percentage .numbers {
+.radial-progress.outer[data-progress="14"] .percentage.visible .numbers {
   width: 855px;
 }
 .radial-progress.outer[data-progress="15"] .circle.visible .mask.full,
@@ -374,7 +375,7 @@
   -ms-transform: rotate(54deg);
   transform: rotate(54deg);
 }
-.radial-progress.outer[data-progress="15"] .percentage .numbers {
+.radial-progress.outer[data-progress="15"] .percentage.visible .numbers {
   width: 912px;
 }
 .radial-progress.outer[data-progress="16"] .circle.visible .mask.full,
@@ -388,7 +389,7 @@
   -ms-transform: rotate(57.6deg);
   transform: rotate(57.6deg);
 }
-.radial-progress.outer[data-progress="16"] .percentage .numbers {
+.radial-progress.outer[data-progress="16"] .percentage.visible .numbers {
   width: 969px;
 }
 .radial-progress.outer[data-progress="17"] .circle.visible .mask.full,
@@ -402,7 +403,7 @@
   -ms-transform: rotate(61.2deg);
   transform: rotate(61.2deg);
 }
-.radial-progress.outer[data-progress="17"] .percentage .numbers {
+.radial-progress.outer[data-progress="17"] .percentage.visible .numbers {
   width: 1026px;
 }
 .radial-progress.outer[data-progress="18"] .circle.visible .mask.full,
@@ -416,7 +417,7 @@
   -ms-transform: rotate(64.8deg);
   transform: rotate(64.8deg);
 }
-.radial-progress.outer[data-progress="18"] .percentage .numbers {
+.radial-progress.outer[data-progress="18"] .percentage.visible .numbers {
   width: 1083px;
 }
 .radial-progress.outer[data-progress="19"] .circle.visible .mask.full,
@@ -430,7 +431,7 @@
   -ms-transform: rotate(68.4deg);
   transform: rotate(68.4deg);
 }
-.radial-progress.outer[data-progress="19"] .percentage .numbers {
+.radial-progress.outer[data-progress="19"] .percentage.visible .numbers {
   width: 1140px;
 }
 .radial-progress.outer[data-progress="20"] .circle.visible .mask.full,
@@ -444,7 +445,7 @@
   -ms-transform: rotate(72deg);
   transform: rotate(72deg);
 }
-.radial-progress.outer[data-progress="20"] .percentage .numbers {
+.radial-progress.outer[data-progress="20"] .percentage.visible .numbers {
   width: 1197px;
 }
 .radial-progress.outer[data-progress="21"] .circle.visible .mask.full,
@@ -458,7 +459,7 @@
   -ms-transform: rotate(75.6deg);
   transform: rotate(75.6deg);
 }
-.radial-progress.outer[data-progress="21"] .percentage .numbers {
+.radial-progress.outer[data-progress="21"] .percentage.visible .numbers {
   width: 1254px;
 }
 .radial-progress.outer[data-progress="22"] .circle.visible .mask.full,
@@ -472,7 +473,7 @@
   -ms-transform: rotate(79.2deg);
   transform: rotate(79.2deg);
 }
-.radial-progress.outer[data-progress="22"] .percentage .numbers {
+.radial-progress.outer[data-progress="22"] .percentage.visible .numbers {
   width: 1311px;
 }
 .radial-progress.outer[data-progress="23"] .circle.visible .mask.full,
@@ -486,7 +487,7 @@
   -ms-transform: rotate(82.8deg);
   transform: rotate(82.8deg);
 }
-.radial-progress.outer[data-progress="23"] .percentage .numbers {
+.radial-progress.outer[data-progress="23"] .percentage.visible .numbers {
   width: 1368px;
 }
 .radial-progress.outer[data-progress="24"] .circle.visible .mask.full,
@@ -500,7 +501,7 @@
   -ms-transform: rotate(86.4deg);
   transform: rotate(86.4deg);
 }
-.radial-progress.outer[data-progress="24"] .percentage .numbers {
+.radial-progress.outer[data-progress="24"] .percentage.visible .numbers {
   width: 1425px;
 }
 .radial-progress.outer[data-progress="25"] .circle.visible .mask.full,
@@ -514,7 +515,7 @@
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
-.radial-progress.outer[data-progress="25"] .percentage .numbers {
+.radial-progress.outer[data-progress="25"] .percentage.visible .numbers {
   width: 1482px;
 }
 .radial-progress.outer[data-progress="26"] .circle.visible .mask.full,
@@ -528,7 +529,7 @@
   -ms-transform: rotate(93.6deg);
   transform: rotate(93.6deg);
 }
-.radial-progress.outer[data-progress="26"] .percentage .numbers {
+.radial-progress.outer[data-progress="26"] .percentage.visible .numbers {
   width: 1539px;
 }
 .radial-progress.outer[data-progress="27"] .circle.visible .mask.full,
@@ -542,7 +543,7 @@
   -ms-transform: rotate(97.2deg);
   transform: rotate(97.2deg);
 }
-.radial-progress.outer[data-progress="27"] .percentage .numbers {
+.radial-progress.outer[data-progress="27"] .percentage.visible .numbers {
   width: 1596px;
 }
 .radial-progress.outer[data-progress="28"] .circle.visible .mask.full,
@@ -556,7 +557,7 @@
   -ms-transform: rotate(100.8deg);
   transform: rotate(100.8deg);
 }
-.radial-progress.outer[data-progress="28"] .percentage .numbers {
+.radial-progress.outer[data-progress="28"] .percentage.visible .numbers {
   width: 1653px;
 }
 .radial-progress.outer[data-progress="29"] .circle.visible .mask.full,
@@ -570,7 +571,7 @@
   -ms-transform: rotate(104.4deg);
   transform: rotate(104.4deg);
 }
-.radial-progress.outer[data-progress="29"] .percentage .numbers {
+.radial-progress.outer[data-progress="29"] .percentage.visible .numbers {
   width: 1710px;
 }
 .radial-progress.outer[data-progress="30"] .circle.visible .mask.full,
@@ -584,7 +585,7 @@
   -ms-transform: rotate(108deg);
   transform: rotate(108deg);
 }
-.radial-progress.outer[data-progress="30"] .percentage .numbers {
+.radial-progress.outer[data-progress="30"] .percentage.visible .numbers {
   width: 1767px;
 }
 .radial-progress.outer[data-progress="31"] .circle.visible .mask.full,
@@ -598,7 +599,7 @@
   -ms-transform: rotate(111.6deg);
   transform: rotate(111.6deg);
 }
-.radial-progress.outer[data-progress="31"] .percentage .numbers {
+.radial-progress.outer[data-progress="31"] .percentage.visible .numbers {
   width: 1824px;
 }
 .radial-progress.outer[data-progress="32"] .circle.visible .mask.full,
@@ -612,7 +613,7 @@
   -ms-transform: rotate(115.2deg);
   transform: rotate(115.2deg);
 }
-.radial-progress.outer[data-progress="32"] .percentage .numbers {
+.radial-progress.outer[data-progress="32"] .percentage.visible .numbers {
   width: 1881px;
 }
 .radial-progress.outer[data-progress="33"] .circle.visible .mask.full,
@@ -626,7 +627,7 @@
   -ms-transform: rotate(118.8deg);
   transform: rotate(118.8deg);
 }
-.radial-progress.outer[data-progress="33"] .percentage .numbers {
+.radial-progress.outer[data-progress="33"] .percentage.visible .numbers {
   width: 1938px;
 }
 .radial-progress.outer[data-progress="34"] .circle.visible .mask.full,
@@ -640,7 +641,7 @@
   -ms-transform: rotate(122.4deg);
   transform: rotate(122.4deg);
 }
-.radial-progress.outer[data-progress="34"] .percentage .numbers {
+.radial-progress.outer[data-progress="34"] .percentage.visible .numbers {
   width: 1995px;
 }
 .radial-progress.outer[data-progress="35"] .circle.visible .mask.full,
@@ -654,7 +655,7 @@
   -ms-transform: rotate(126deg);
   transform: rotate(126deg);
 }
-.radial-progress.outer[data-progress="35"] .percentage .numbers {
+.radial-progress.outer[data-progress="35"] .percentage.visible .numbers {
   width: 2052px;
 }
 .radial-progress.outer[data-progress="36"] .circle.visible .mask.full,
@@ -668,7 +669,7 @@
   -ms-transform: rotate(129.6deg);
   transform: rotate(129.6deg);
 }
-.radial-progress.outer[data-progress="36"] .percentage .numbers {
+.radial-progress.outer[data-progress="36"] .percentage.visible .numbers {
   width: 2109px;
 }
 .radial-progress.outer[data-progress="37"] .circle.visible .mask.full,
@@ -682,7 +683,7 @@
   -ms-transform: rotate(133.2deg);
   transform: rotate(133.2deg);
 }
-.radial-progress.outer[data-progress="37"] .percentage .numbers {
+.radial-progress.outer[data-progress="37"] .percentage.visible .numbers {
   width: 2166px;
 }
 .radial-progress.outer[data-progress="38"] .circle.visible .mask.full,
@@ -696,7 +697,7 @@
   -ms-transform: rotate(136.8deg);
   transform: rotate(136.8deg);
 }
-.radial-progress.outer[data-progress="38"] .percentage .numbers {
+.radial-progress.outer[data-progress="38"] .percentage.visible .numbers {
   width: 2223px;
 }
 .radial-progress.outer[data-progress="39"] .circle.visible .mask.full,
@@ -710,7 +711,7 @@
   -ms-transform: rotate(140.4deg);
   transform: rotate(140.4deg);
 }
-.radial-progress.outer[data-progress="39"] .percentage .numbers {
+.radial-progress.outer[data-progress="39"] .percentage.visible .numbers {
   width: 2280px;
 }
 .radial-progress.outer[data-progress="40"] .circle.visible .mask.full,
@@ -724,7 +725,7 @@
   -ms-transform: rotate(144deg);
   transform: rotate(144deg);
 }
-.radial-progress.outer[data-progress="40"] .percentage .numbers {
+.radial-progress.outer[data-progress="40"] .percentage.visible .numbers {
   width: 2337px;
 }
 .radial-progress.outer[data-progress="41"] .circle.visible .mask.full,
@@ -738,7 +739,7 @@
   -ms-transform: rotate(147.6deg);
   transform: rotate(147.6deg);
 }
-.radial-progress.outer[data-progress="41"] .percentage .numbers {
+.radial-progress.outer[data-progress="41"] .percentage.visible .numbers {
   width: 2394px;
 }
 .radial-progress.outer[data-progress="42"] .circle.visible .mask.full,
@@ -752,7 +753,7 @@
   -ms-transform: rotate(151.2deg);
   transform: rotate(151.2deg);
 }
-.radial-progress.outer[data-progress="42"] .percentage .numbers {
+.radial-progress.outer[data-progress="42"] .percentage.visible .numbers {
   width: 2451px;
 }
 .radial-progress.outer[data-progress="43"] .circle.visible .mask.full,
@@ -766,7 +767,7 @@
   -ms-transform: rotate(154.8deg);
   transform: rotate(154.8deg);
 }
-.radial-progress.outer[data-progress="43"] .percentage .numbers {
+.radial-progress.outer[data-progress="43"] .percentage.visible .numbers {
   width: 2508px;
 }
 .radial-progress.outer[data-progress="44"] .circle.visible .mask.full,
@@ -780,7 +781,7 @@
   -ms-transform: rotate(158.4deg);
   transform: rotate(158.4deg);
 }
-.radial-progress.outer[data-progress="44"] .percentage .numbers {
+.radial-progress.outer[data-progress="44"] .percentage.visible .numbers {
   width: 2565px;
 }
 .radial-progress.outer[data-progress="45"] .circle.visible .mask.full,
@@ -794,7 +795,7 @@
   -ms-transform: rotate(162deg);
   transform: rotate(162deg);
 }
-.radial-progress.outer[data-progress="45"] .percentage .numbers {
+.radial-progress.outer[data-progress="45"] .percentage.visible .numbers {
   width: 2622px;
 }
 .radial-progress.outer[data-progress="46"] .circle.visible .mask.full,
@@ -808,7 +809,7 @@
   -ms-transform: rotate(165.6deg);
   transform: rotate(165.6deg);
 }
-.radial-progress.outer[data-progress="46"] .percentage .numbers {
+.radial-progress.outer[data-progress="46"] .percentage.visible .numbers {
   width: 2679px;
 }
 .radial-progress.outer[data-progress="47"] .circle.visible .mask.full,
@@ -822,7 +823,7 @@
   -ms-transform: rotate(169.2deg);
   transform: rotate(169.2deg);
 }
-.radial-progress.outer[data-progress="47"] .percentage .numbers {
+.radial-progress.outer[data-progress="47"] .percentage.visible .numbers {
   width: 2736px;
 }
 .radial-progress.outer[data-progress="48"] .circle.visible .mask.full,
@@ -836,7 +837,7 @@
   -ms-transform: rotate(172.8deg);
   transform: rotate(172.8deg);
 }
-.radial-progress.outer[data-progress="48"] .percentage .numbers {
+.radial-progress.outer[data-progress="48"] .percentage.visible .numbers {
   width: 2793px;
 }
 .radial-progress.outer[data-progress="49"] .circle.visible .mask.full,
@@ -850,7 +851,7 @@
   -ms-transform: rotate(176.4deg);
   transform: rotate(176.4deg);
 }
-.radial-progress.outer[data-progress="49"] .percentage .numbers {
+.radial-progress.outer[data-progress="49"] .percentage.visible .numbers {
   width: 2850px;
 }
 .radial-progress.outer[data-progress="50"] .circle.visible .mask.full,
@@ -864,7 +865,7 @@
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
-.radial-progress.outer[data-progress="50"] .percentage .numbers {
+.radial-progress.outer[data-progress="50"] .percentage.visible .numbers {
   width: 2907px;
 }
 .radial-progress.outer[data-progress="51"] .circle.visible .mask.full,
@@ -878,7 +879,7 @@
   -ms-transform: rotate(183.6deg);
   transform: rotate(183.6deg);
 }
-.radial-progress.outer[data-progress="51"] .percentage .numbers {
+.radial-progress.outer[data-progress="51"] .percentage.visible .numbers {
   width: 2964px;
 }
 .radial-progress.outer[data-progress="52"] .circle.visible .mask.full,
@@ -892,7 +893,7 @@
   -ms-transform: rotate(187.2deg);
   transform: rotate(187.2deg);
 }
-.radial-progress.outer[data-progress="52"] .percentage .numbers {
+.radial-progress.outer[data-progress="52"] .percentage.visible .numbers {
   width: 3021px;
 }
 .radial-progress.outer[data-progress="53"] .circle.visible .mask.full,
@@ -906,7 +907,7 @@
   -ms-transform: rotate(190.8deg);
   transform: rotate(190.8deg);
 }
-.radial-progress.outer[data-progress="53"] .percentage .numbers {
+.radial-progress.outer[data-progress="53"] .percentage.visible .numbers {
   width: 3078px;
 }
 .radial-progress.outer[data-progress="54"] .circle.visible .mask.full,
@@ -920,7 +921,7 @@
   -ms-transform: rotate(194.4deg);
   transform: rotate(194.4deg);
 }
-.radial-progress.outer[data-progress="54"] .percentage .numbers {
+.radial-progress.outer[data-progress="54"] .percentage.visible .numbers {
   width: 3135px;
 }
 .radial-progress.outer[data-progress="55"] .circle.visible .mask.full,
@@ -934,7 +935,7 @@
   -ms-transform: rotate(198deg);
   transform: rotate(198deg);
 }
-.radial-progress.outer[data-progress="55"] .percentage .numbers {
+.radial-progress.outer[data-progress="55"] .percentage.visible .numbers {
   width: 3192px;
 }
 .radial-progress.outer[data-progress="56"] .circle.visible .mask.full,
@@ -948,7 +949,7 @@
   -ms-transform: rotate(201.6deg);
   transform: rotate(201.6deg);
 }
-.radial-progress.outer[data-progress="56"] .percentage .numbers {
+.radial-progress.outer[data-progress="56"] .percentage.visible .numbers {
   width: 3249px;
 }
 .radial-progress.outer[data-progress="57"] .circle.visible .mask.full,
@@ -962,7 +963,7 @@
   -ms-transform: rotate(205.2deg);
   transform: rotate(205.2deg);
 }
-.radial-progress.outer[data-progress="57"] .percentage .numbers {
+.radial-progress.outer[data-progress="57"] .percentage.visible .numbers {
   width: 3306px;
 }
 .radial-progress.outer[data-progress="58"] .circle.visible .mask.full,
@@ -976,7 +977,7 @@
   -ms-transform: rotate(208.8deg);
   transform: rotate(208.8deg);
 }
-.radial-progress.outer[data-progress="58"] .percentage .numbers {
+.radial-progress.outer[data-progress="58"] .percentage.visible .numbers {
   width: 3363px;
 }
 .radial-progress.outer[data-progress="59"] .circle.visible .mask.full,
@@ -990,7 +991,7 @@
   -ms-transform: rotate(212.4deg);
   transform: rotate(212.4deg);
 }
-.radial-progress.outer[data-progress="59"] .percentage .numbers {
+.radial-progress.outer[data-progress="59"] .percentage.visible .numbers {
   width: 3420px;
 }
 .radial-progress.outer[data-progress="60"] .circle.visible .mask.full,
@@ -1004,7 +1005,7 @@
   -ms-transform: rotate(216deg);
   transform: rotate(216deg);
 }
-.radial-progress.outer[data-progress="60"] .percentage .numbers {
+.radial-progress.outer[data-progress="60"] .percentage.visible .numbers {
   width: 3477px;
 }
 .radial-progress.outer[data-progress="61"] .circle.visible .mask.full,
@@ -1018,7 +1019,7 @@
   -ms-transform: rotate(219.6deg);
   transform: rotate(219.6deg);
 }
-.radial-progress.outer[data-progress="61"] .percentage .numbers {
+.radial-progress.outer[data-progress="61"] .percentage.visible .numbers {
   width: 3534px;
 }
 .radial-progress.outer[data-progress="62"] .circle.visible .mask.full,
@@ -1032,7 +1033,7 @@
   -ms-transform: rotate(223.2deg);
   transform: rotate(223.2deg);
 }
-.radial-progress.outer[data-progress="62"] .percentage .numbers {
+.radial-progress.outer[data-progress="62"] .percentage.visible .numbers {
   width: 3591px;
 }
 .radial-progress.outer[data-progress="63"] .circle.visible .mask.full,
@@ -1046,7 +1047,7 @@
   -ms-transform: rotate(226.8deg);
   transform: rotate(226.8deg);
 }
-.radial-progress.outer[data-progress="63"] .percentage .numbers {
+.radial-progress.outer[data-progress="63"] .percentage.visible .numbers {
   width: 3648px;
 }
 .radial-progress.outer[data-progress="64"] .circle.visible .mask.full,
@@ -1060,7 +1061,7 @@
   -ms-transform: rotate(230.4deg);
   transform: rotate(230.4deg);
 }
-.radial-progress.outer[data-progress="64"] .percentage .numbers {
+.radial-progress.outer[data-progress="64"] .percentage.visible .numbers {
   width: 3705px;
 }
 .radial-progress.outer[data-progress="65"] .circle.visible .mask.full,
@@ -1074,7 +1075,7 @@
   -ms-transform: rotate(234deg);
   transform: rotate(234deg);
 }
-.radial-progress.outer[data-progress="65"] .percentage .numbers {
+.radial-progress.outer[data-progress="65"] .percentage.visible .numbers {
   width: 3762px;
 }
 .radial-progress.outer[data-progress="66"] .circle.visible .mask.full,
@@ -1088,7 +1089,7 @@
   -ms-transform: rotate(237.6deg);
   transform: rotate(237.6deg);
 }
-.radial-progress.outer[data-progress="66"] .percentage .numbers {
+.radial-progress.outer[data-progress="66"] .percentage.visible .numbers {
   width: 3819px;
 }
 .radial-progress.outer[data-progress="67"] .circle.visible .mask.full,
@@ -1102,7 +1103,7 @@
   -ms-transform: rotate(241.2deg);
   transform: rotate(241.2deg);
 }
-.radial-progress.outer[data-progress="67"] .percentage .numbers {
+.radial-progress.outer[data-progress="67"] .percentage.visible .numbers {
   width: 3876px;
 }
 .radial-progress.outer[data-progress="68"] .circle.visible .mask.full,
@@ -1116,7 +1117,7 @@
   -ms-transform: rotate(244.8deg);
   transform: rotate(244.8deg);
 }
-.radial-progress.outer[data-progress="68"] .percentage .numbers {
+.radial-progress.outer[data-progress="68"] .percentage.visible .numbers {
   width: 3933px;
 }
 .radial-progress.outer[data-progress="69"] .circle.visible .mask.full,
@@ -1130,7 +1131,7 @@
   -ms-transform: rotate(248.4deg);
   transform: rotate(248.4deg);
 }
-.radial-progress.outer[data-progress="69"] .percentage .numbers {
+.radial-progress.outer[data-progress="69"] .percentage.visible .numbers {
   width: 3990px;
 }
 .radial-progress.outer[data-progress="70"] .circle.visible .mask.full,
@@ -1144,7 +1145,7 @@
   -ms-transform: rotate(252deg);
   transform: rotate(252deg);
 }
-.radial-progress.outer[data-progress="70"] .percentage .numbers {
+.radial-progress.outer[data-progress="70"] .percentage.visible .numbers {
   width: 4047px;
 }
 .radial-progress.outer[data-progress="71"] .circle.visible .mask.full,
@@ -1158,7 +1159,7 @@
   -ms-transform: rotate(255.6deg);
   transform: rotate(255.6deg);
 }
-.radial-progress.outer[data-progress="71"] .percentage .numbers {
+.radial-progress.outer[data-progress="71"] .percentage.visible .numbers {
   width: 4104px;
 }
 .radial-progress.outer[data-progress="72"] .circle.visible .mask.full,
@@ -1172,7 +1173,7 @@
   -ms-transform: rotate(259.2deg);
   transform: rotate(259.2deg);
 }
-.radial-progress.outer[data-progress="72"] .percentage .numbers {
+.radial-progress.outer[data-progress="72"] .percentage.visible .numbers {
   width: 4161px;
 }
 .radial-progress.outer[data-progress="73"] .circle.visible .mask.full,
@@ -1186,7 +1187,7 @@
   -ms-transform: rotate(262.8deg);
   transform: rotate(262.8deg);
 }
-.radial-progress.outer[data-progress="73"] .percentage .numbers {
+.radial-progress.outer[data-progress="73"] .percentage.visible .numbers {
   width: 4218px;
 }
 .radial-progress.outer[data-progress="74"] .circle.visible .mask.full,
@@ -1200,7 +1201,7 @@
   -ms-transform: rotate(266.4deg);
   transform: rotate(266.4deg);
 }
-.radial-progress.outer[data-progress="74"] .percentage .numbers {
+.radial-progress.outer[data-progress="74"] .percentage.visible .numbers {
   width: 4275px;
 }
 .radial-progress.outer[data-progress="75"] .circle.visible .mask.full,
@@ -1214,7 +1215,7 @@
   -ms-transform: rotate(270deg);
   transform: rotate(270deg);
 }
-.radial-progress.outer[data-progress="75"] .percentage .numbers {
+.radial-progress.outer[data-progress="75"] .percentage.visible .numbers {
   width: 4332px;
 }
 .radial-progress.outer[data-progress="76"] .circle.visible .mask.full,
@@ -1228,7 +1229,7 @@
   -ms-transform: rotate(273.6deg);
   transform: rotate(273.6deg);
 }
-.radial-progress.outer[data-progress="76"] .percentage .numbers {
+.radial-progress.outer[data-progress="76"] .percentage.visible .numbers {
   width: 4389px;
 }
 .radial-progress.outer[data-progress="77"] .circle.visible .mask.full,
@@ -1242,7 +1243,7 @@
   -ms-transform: rotate(277.2deg);
   transform: rotate(277.2deg);
 }
-.radial-progress.outer[data-progress="77"] .percentage .numbers {
+.radial-progress.outer[data-progress="77"] .percentage.visible .numbers {
   width: 4446px;
 }
 .radial-progress.outer[data-progress="78"] .circle.visible .mask.full,
@@ -1256,7 +1257,7 @@
   -ms-transform: rotate(280.8deg);
   transform: rotate(280.8deg);
 }
-.radial-progress.outer[data-progress="78"] .percentage .numbers {
+.radial-progress.outer[data-progress="78"] .percentage.visible .numbers {
   width: 4503px;
 }
 .radial-progress.outer[data-progress="79"] .circle.visible .mask.full,
@@ -1270,7 +1271,7 @@
   -ms-transform: rotate(284.4deg);
   transform: rotate(284.4deg);
 }
-.radial-progress.outer[data-progress="79"] .percentage .numbers {
+.radial-progress.outer[data-progress="79"] .percentage.visible .numbers {
   width: 4560px;
 }
 .radial-progress.outer[data-progress="80"] .circle.visible .mask.full,
@@ -1284,7 +1285,7 @@
   -ms-transform: rotate(288deg);
   transform: rotate(288deg);
 }
-.radial-progress.outer[data-progress="80"] .percentage .numbers {
+.radial-progress.outer[data-progress="80"] .percentage.visible .numbers {
   width: 4617px;
 }
 .radial-progress.outer[data-progress="81"] .circle.visible .mask.full,
@@ -1298,7 +1299,7 @@
   -ms-transform: rotate(291.6deg);
   transform: rotate(291.6deg);
 }
-.radial-progress.outer[data-progress="81"] .percentage .numbers {
+.radial-progress.outer[data-progress="81"] .percentage.visible .numbers {
   width: 4674px;
 }
 .radial-progress.outer[data-progress="82"] .circle.visible .mask.full,
@@ -1312,7 +1313,7 @@
   -ms-transform: rotate(295.2deg);
   transform: rotate(295.2deg);
 }
-.radial-progress.outer[data-progress="82"] .percentage .numbers {
+.radial-progress.outer[data-progress="82"] .percentage.visible .numbers {
   width: 4731px;
 }
 .radial-progress.outer[data-progress="83"] .circle.visible .mask.full,
@@ -1326,7 +1327,7 @@
   -ms-transform: rotate(298.8deg);
   transform: rotate(298.8deg);
 }
-.radial-progress.outer[data-progress="83"] .percentage .numbers {
+.radial-progress.outer[data-progress="83"] .percentage.visible .numbers {
   width: 4788px;
 }
 .radial-progress.outer[data-progress="84"] .circle.visible .mask.full,
@@ -1340,7 +1341,7 @@
   -ms-transform: rotate(302.4deg);
   transform: rotate(302.4deg);
 }
-.radial-progress.outer[data-progress="84"] .percentage .numbers {
+.radial-progress.outer[data-progress="84"] .percentage.visible .numbers {
   width: 4845px;
 }
 .radial-progress.outer[data-progress="85"] .circle.visible .mask.full,
@@ -1354,7 +1355,7 @@
   -ms-transform: rotate(306deg);
   transform: rotate(306deg);
 }
-.radial-progress.outer[data-progress="85"] .percentage .numbers {
+.radial-progress.outer[data-progress="85"] .percentage.visible .numbers {
   width: 4902px;
 }
 .radial-progress.outer[data-progress="86"] .circle.visible .mask.full,
@@ -1368,7 +1369,7 @@
   -ms-transform: rotate(309.6deg);
   transform: rotate(309.6deg);
 }
-.radial-progress.outer[data-progress="86"] .percentage .numbers {
+.radial-progress.outer[data-progress="86"] .percentage.visible .numbers {
   width: 4959px;
 }
 .radial-progress.outer[data-progress="87"] .circle.visible .mask.full,
@@ -1382,7 +1383,7 @@
   -ms-transform: rotate(313.2deg);
   transform: rotate(313.2deg);
 }
-.radial-progress.outer[data-progress="87"] .percentage .numbers {
+.radial-progress.outer[data-progress="87"] .percentage.visible .numbers {
   width: 5016px;
 }
 .radial-progress.outer[data-progress="88"] .circle.visible .mask.full,
@@ -1396,7 +1397,7 @@
   -ms-transform: rotate(316.8deg);
   transform: rotate(316.8deg);
 }
-.radial-progress.outer[data-progress="88"] .percentage .numbers {
+.radial-progress.outer[data-progress="88"] .percentage.visible .numbers {
   width: 5073px;
 }
 .radial-progress.outer[data-progress="89"] .circle.visible .mask.full,
@@ -1410,7 +1411,7 @@
   -ms-transform: rotate(320.4deg);
   transform: rotate(320.4deg);
 }
-.radial-progress.outer[data-progress="89"] .percentage .numbers {
+.radial-progress.outer[data-progress="89"] .percentage.visible .numbers {
   width: 5130px;
 }
 .radial-progress.outer[data-progress="90"] .circle.visible .mask.full,
@@ -1424,7 +1425,7 @@
   -ms-transform: rotate(324deg);
   transform: rotate(324deg);
 }
-.radial-progress.outer[data-progress="90"] .percentage .numbers {
+.radial-progress.outer[data-progress="90"] .percentage.visible .numbers {
   width: 5187px;
 }
 .radial-progress.outer[data-progress="91"] .circle.visible .mask.full,
@@ -1438,7 +1439,7 @@
   -ms-transform: rotate(327.6deg);
   transform: rotate(327.6deg);
 }
-.radial-progress.outer[data-progress="91"] .percentage .numbers {
+.radial-progress.outer[data-progress="91"] .percentage.visible .numbers {
   width: 5244px;
 }
 .radial-progress.outer[data-progress="92"] .circle.visible .mask.full,
@@ -1452,7 +1453,7 @@
   -ms-transform: rotate(331.2deg);
   transform: rotate(331.2deg);
 }
-.radial-progress.outer[data-progress="92"] .percentage .numbers {
+.radial-progress.outer[data-progress="92"] .percentage.visible .numbers {
   width: 5301px;
 }
 .radial-progress.outer[data-progress="93"] .circle.visible .mask.full,
@@ -1466,7 +1467,7 @@
   -ms-transform: rotate(334.8deg);
   transform: rotate(334.8deg);
 }
-.radial-progress.outer[data-progress="93"] .percentage .numbers {
+.radial-progress.outer[data-progress="93"] .percentage.visible .numbers {
   width: 5358px;
 }
 .radial-progress.outer[data-progress="94"] .circle.visible .mask.full,
@@ -1480,7 +1481,7 @@
   -ms-transform: rotate(338.4deg);
   transform: rotate(338.4deg);
 }
-.radial-progress.outer[data-progress="94"] .percentage .numbers {
+.radial-progress.outer[data-progress="94"] .percentage.visible .numbers {
   width: 5415px;
 }
 .radial-progress.outer[data-progress="95"] .circle.visible .mask.full,
@@ -1494,7 +1495,7 @@
   -ms-transform: rotate(342deg);
   transform: rotate(342deg);
 }
-.radial-progress.outer[data-progress="95"] .percentage .numbers {
+.radial-progress.outer[data-progress="95"] .percentage.visible .numbers {
   width: 5472px;
 }
 .radial-progress.outer[data-progress="96"] .circle.visible .mask.full,
@@ -1508,7 +1509,7 @@
   -ms-transform: rotate(345.6deg);
   transform: rotate(345.6deg);
 }
-.radial-progress.outer[data-progress="96"] .percentage .numbers {
+.radial-progress.outer[data-progress="96"] .percentage.visible .numbers {
   width: 5529px;
 }
 .radial-progress.outer[data-progress="97"] .circle.visible .mask.full,
@@ -1522,7 +1523,7 @@
   -ms-transform: rotate(349.2deg);
   transform: rotate(349.2deg);
 }
-.radial-progress.outer[data-progress="97"] .percentage .numbers {
+.radial-progress.outer[data-progress="97"] .percentage.visible .numbers {
   width: 5586px;
 }
 .radial-progress.outer[data-progress="98"] .circle.visible .mask.full,
@@ -1536,7 +1537,7 @@
   -ms-transform: rotate(352.8deg);
   transform: rotate(352.8deg);
 }
-.radial-progress.outer[data-progress="98"] .percentage .numbers {
+.radial-progress.outer[data-progress="98"] .percentage.visible .numbers {
   width: 5643px;
 }
 .radial-progress.outer[data-progress="99"] .circle.visible .mask.full,
@@ -1550,7 +1551,7 @@
   -ms-transform: rotate(356.4deg);
   transform: rotate(356.4deg);
 }
-.radial-progress.outer[data-progress="99"] .percentage .numbers {
+.radial-progress.outer[data-progress="99"] .percentage.visible .numbers {
   width: 5700px;
 }
 .radial-progress.outer[data-progress="100"] .circle.visible .mask.full,
@@ -1564,7 +1565,7 @@
   -ms-transform: rotate(360deg);
   transform: rotate(360deg);
 }
-.radial-progress.outer[data-progress="100"] .percentage .numbers {
+.radial-progress.outer[data-progress="100"] .percentage.visible .numbers {
   width: 5757px;
 }
 .radial-progress.inner {
@@ -1602,7 +1603,7 @@
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
 }
-.radial-progress.inner[data-progress="0"] .percentage .numbers {
+.radial-progress.inner[data-progress="0"] .percentage.visible .numbers {
   width: 57px;
 }
 .radial-progress.inner[data-progress="1"] .circle.visible .mask.full,
@@ -1616,7 +1617,7 @@
   -ms-transform: rotate(3.6deg);
   transform: rotate(3.6deg);
 }
-.radial-progress.inner[data-progress="1"] .percentage .numbers {
+.radial-progress.inner[data-progress="1"] .percentage.visible .numbers {
   width: 114px;
 }
 .radial-progress.inner[data-progress="2"] .circle.visible .mask.full,
@@ -1630,7 +1631,7 @@
   -ms-transform: rotate(7.2deg);
   transform: rotate(7.2deg);
 }
-.radial-progress.inner[data-progress="2"] .percentage .numbers {
+.radial-progress.inner[data-progress="2"] .percentage.visible .numbers {
   width: 171px;
 }
 .radial-progress.inner[data-progress="3"] .circle.visible .mask.full,
@@ -1644,7 +1645,7 @@
   -ms-transform: rotate(10.8deg);
   transform: rotate(10.8deg);
 }
-.radial-progress.inner[data-progress="3"] .percentage .numbers {
+.radial-progress.inner[data-progress="3"] .percentage.visible .numbers {
   width: 228px;
 }
 .radial-progress.inner[data-progress="4"] .circle.visible .mask.full,
@@ -1658,7 +1659,7 @@
   -ms-transform: rotate(14.4deg);
   transform: rotate(14.4deg);
 }
-.radial-progress.inner[data-progress="4"] .percentage .numbers {
+.radial-progress.inner[data-progress="4"] .percentage.visible .numbers {
   width: 285px;
 }
 .radial-progress.inner[data-progress="5"] .circle.visible .mask.full,
@@ -1672,7 +1673,7 @@
   -ms-transform: rotate(18deg);
   transform: rotate(18deg);
 }
-.radial-progress.inner[data-progress="5"] .percentage .numbers {
+.radial-progress.inner[data-progress="5"] .percentage.visible .numbers {
   width: 342px;
 }
 .radial-progress.inner[data-progress="6"] .circle.visible .mask.full,
@@ -1686,7 +1687,7 @@
   -ms-transform: rotate(21.6deg);
   transform: rotate(21.6deg);
 }
-.radial-progress.inner[data-progress="6"] .percentage .numbers {
+.radial-progress.inner[data-progress="6"] .percentage.visible .numbers {
   width: 399px;
 }
 .radial-progress.inner[data-progress="7"] .circle.visible .mask.full,
@@ -1700,7 +1701,7 @@
   -ms-transform: rotate(25.2deg);
   transform: rotate(25.2deg);
 }
-.radial-progress.inner[data-progress="7"] .percentage .numbers {
+.radial-progress.inner[data-progress="7"] .percentage.visible .numbers {
   width: 456px;
 }
 .radial-progress.inner[data-progress="8"] .circle.visible .mask.full,
@@ -1714,7 +1715,7 @@
   -ms-transform: rotate(28.8deg);
   transform: rotate(28.8deg);
 }
-.radial-progress.inner[data-progress="8"] .percentage .numbers {
+.radial-progress.inner[data-progress="8"] .percentage.visible .numbers {
   width: 513px;
 }
 .radial-progress.inner[data-progress="9"] .circle.visible .mask.full,
@@ -1728,7 +1729,7 @@
   -ms-transform: rotate(32.4deg);
   transform: rotate(32.4deg);
 }
-.radial-progress.inner[data-progress="9"] .percentage .numbers {
+.radial-progress.inner[data-progress="9"] .percentage.visible .numbers {
   width: 570px;
 }
 .radial-progress.inner[data-progress="10"] .circle.visible .mask.full,
@@ -1742,7 +1743,7 @@
   -ms-transform: rotate(36deg);
   transform: rotate(36deg);
 }
-.radial-progress.inner[data-progress="10"] .percentage .numbers {
+.radial-progress.inner[data-progress="10"] .percentage.visible .numbers {
   width: 627px;
 }
 .radial-progress.inner[data-progress="11"] .circle.visible .mask.full,
@@ -1756,7 +1757,7 @@
   -ms-transform: rotate(39.6deg);
   transform: rotate(39.6deg);
 }
-.radial-progress.inner[data-progress="11"] .percentage .numbers {
+.radial-progress.inner[data-progress="11"] .percentage.visible .numbers {
   width: 684px;
 }
 .radial-progress.inner[data-progress="12"] .circle.visible .mask.full,
@@ -1770,7 +1771,7 @@
   -ms-transform: rotate(43.2deg);
   transform: rotate(43.2deg);
 }
-.radial-progress.inner[data-progress="12"] .percentage .numbers {
+.radial-progress.inner[data-progress="12"] .percentage.visible .numbers {
   width: 741px;
 }
 .radial-progress.inner[data-progress="13"] .circle.visible .mask.full,
@@ -1784,7 +1785,7 @@
   -ms-transform: rotate(46.8deg);
   transform: rotate(46.8deg);
 }
-.radial-progress.inner[data-progress="13"] .percentage .numbers {
+.radial-progress.inner[data-progress="13"] .percentage.visible .numbers {
   width: 798px;
 }
 .radial-progress.inner[data-progress="14"] .circle.visible .mask.full,
@@ -1798,7 +1799,7 @@
   -ms-transform: rotate(50.4deg);
   transform: rotate(50.4deg);
 }
-.radial-progress.inner[data-progress="14"] .percentage .numbers {
+.radial-progress.inner[data-progress="14"] .percentage.visible .numbers {
   width: 855px;
 }
 .radial-progress.inner[data-progress="15"] .circle.visible .mask.full,
@@ -1812,7 +1813,7 @@
   -ms-transform: rotate(54deg);
   transform: rotate(54deg);
 }
-.radial-progress.inner[data-progress="15"] .percentage .numbers {
+.radial-progress.inner[data-progress="15"] .percentage.visible .numbers {
   width: 912px;
 }
 .radial-progress.inner[data-progress="16"] .circle.visible .mask.full,
@@ -1826,7 +1827,7 @@
   -ms-transform: rotate(57.6deg);
   transform: rotate(57.6deg);
 }
-.radial-progress.inner[data-progress="16"] .percentage .numbers {
+.radial-progress.inner[data-progress="16"] .percentage.visible .numbers {
   width: 969px;
 }
 .radial-progress.inner[data-progress="17"] .circle.visible .mask.full,
@@ -1840,7 +1841,7 @@
   -ms-transform: rotate(61.2deg);
   transform: rotate(61.2deg);
 }
-.radial-progress.inner[data-progress="17"] .percentage .numbers {
+.radial-progress.inner[data-progress="17"] .percentage.visible .numbers {
   width: 1026px;
 }
 .radial-progress.inner[data-progress="18"] .circle.visible .mask.full,
@@ -1854,7 +1855,7 @@
   -ms-transform: rotate(64.8deg);
   transform: rotate(64.8deg);
 }
-.radial-progress.inner[data-progress="18"] .percentage .numbers {
+.radial-progress.inner[data-progress="18"] .percentage.visible .numbers {
   width: 1083px;
 }
 .radial-progress.inner[data-progress="19"] .circle.visible .mask.full,
@@ -1868,7 +1869,7 @@
   -ms-transform: rotate(68.4deg);
   transform: rotate(68.4deg);
 }
-.radial-progress.inner[data-progress="19"] .percentage .numbers {
+.radial-progress.inner[data-progress="19"] .percentage.visible .numbers {
   width: 1140px;
 }
 .radial-progress.inner[data-progress="20"] .circle.visible .mask.full,
@@ -1882,7 +1883,7 @@
   -ms-transform: rotate(72deg);
   transform: rotate(72deg);
 }
-.radial-progress.inner[data-progress="20"] .percentage .numbers {
+.radial-progress.inner[data-progress="20"] .percentage.visible .numbers {
   width: 1197px;
 }
 .radial-progress.inner[data-progress="21"] .circle.visible .mask.full,
@@ -1896,7 +1897,7 @@
   -ms-transform: rotate(75.6deg);
   transform: rotate(75.6deg);
 }
-.radial-progress.inner[data-progress="21"] .percentage .numbers {
+.radial-progress.inner[data-progress="21"] .percentage.visible .numbers {
   width: 1254px;
 }
 .radial-progress.inner[data-progress="22"] .circle.visible .mask.full,
@@ -1910,7 +1911,7 @@
   -ms-transform: rotate(79.2deg);
   transform: rotate(79.2deg);
 }
-.radial-progress.inner[data-progress="22"] .percentage .numbers {
+.radial-progress.inner[data-progress="22"] .percentage.visible .numbers {
   width: 1311px;
 }
 .radial-progress.inner[data-progress="23"] .circle.visible .mask.full,
@@ -1924,7 +1925,7 @@
   -ms-transform: rotate(82.8deg);
   transform: rotate(82.8deg);
 }
-.radial-progress.inner[data-progress="23"] .percentage .numbers {
+.radial-progress.inner[data-progress="23"] .percentage.visible .numbers {
   width: 1368px;
 }
 .radial-progress.inner[data-progress="24"] .circle.visible .mask.full,
@@ -1938,7 +1939,7 @@
   -ms-transform: rotate(86.4deg);
   transform: rotate(86.4deg);
 }
-.radial-progress.inner[data-progress="24"] .percentage .numbers {
+.radial-progress.inner[data-progress="24"] .percentage.visible .numbers {
   width: 1425px;
 }
 .radial-progress.inner[data-progress="25"] .circle.visible .mask.full,
@@ -1952,7 +1953,7 @@
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
-.radial-progress.inner[data-progress="25"] .percentage .numbers {
+.radial-progress.inner[data-progress="25"] .percentage.visible .numbers {
   width: 1482px;
 }
 .radial-progress.inner[data-progress="26"] .circle.visible .mask.full,
@@ -1966,7 +1967,7 @@
   -ms-transform: rotate(93.6deg);
   transform: rotate(93.6deg);
 }
-.radial-progress.inner[data-progress="26"] .percentage .numbers {
+.radial-progress.inner[data-progress="26"] .percentage.visible .numbers {
   width: 1539px;
 }
 .radial-progress.inner[data-progress="27"] .circle.visible .mask.full,
@@ -1980,7 +1981,7 @@
   -ms-transform: rotate(97.2deg);
   transform: rotate(97.2deg);
 }
-.radial-progress.inner[data-progress="27"] .percentage .numbers {
+.radial-progress.inner[data-progress="27"] .percentage.visible .numbers {
   width: 1596px;
 }
 .radial-progress.inner[data-progress="28"] .circle.visible .mask.full,
@@ -1994,7 +1995,7 @@
   -ms-transform: rotate(100.8deg);
   transform: rotate(100.8deg);
 }
-.radial-progress.inner[data-progress="28"] .percentage .numbers {
+.radial-progress.inner[data-progress="28"] .percentage.visible .numbers {
   width: 1653px;
 }
 .radial-progress.inner[data-progress="29"] .circle.visible .mask.full,
@@ -2008,7 +2009,7 @@
   -ms-transform: rotate(104.4deg);
   transform: rotate(104.4deg);
 }
-.radial-progress.inner[data-progress="29"] .percentage .numbers {
+.radial-progress.inner[data-progress="29"] .percentage.visible .numbers {
   width: 1710px;
 }
 .radial-progress.inner[data-progress="30"] .circle.visible .mask.full,
@@ -2022,7 +2023,7 @@
   -ms-transform: rotate(108deg);
   transform: rotate(108deg);
 }
-.radial-progress.inner[data-progress="30"] .percentage .numbers {
+.radial-progress.inner[data-progress="30"] .percentage.visible .numbers {
   width: 1767px;
 }
 .radial-progress.inner[data-progress="31"] .circle.visible .mask.full,
@@ -2036,7 +2037,7 @@
   -ms-transform: rotate(111.6deg);
   transform: rotate(111.6deg);
 }
-.radial-progress.inner[data-progress="31"] .percentage .numbers {
+.radial-progress.inner[data-progress="31"] .percentage.visible .numbers {
   width: 1824px;
 }
 .radial-progress.inner[data-progress="32"] .circle.visible .mask.full,
@@ -2050,7 +2051,7 @@
   -ms-transform: rotate(115.2deg);
   transform: rotate(115.2deg);
 }
-.radial-progress.inner[data-progress="32"] .percentage .numbers {
+.radial-progress.inner[data-progress="32"] .percentage.visible .numbers {
   width: 1881px;
 }
 .radial-progress.inner[data-progress="33"] .circle.visible .mask.full,
@@ -2064,7 +2065,7 @@
   -ms-transform: rotate(118.8deg);
   transform: rotate(118.8deg);
 }
-.radial-progress.inner[data-progress="33"] .percentage .numbers {
+.radial-progress.inner[data-progress="33"] .percentage.visible .numbers {
   width: 1938px;
 }
 .radial-progress.inner[data-progress="34"] .circle.visible .mask.full,
@@ -2078,7 +2079,7 @@
   -ms-transform: rotate(122.4deg);
   transform: rotate(122.4deg);
 }
-.radial-progress.inner[data-progress="34"] .percentage .numbers {
+.radial-progress.inner[data-progress="34"] .percentage.visible .numbers {
   width: 1995px;
 }
 .radial-progress.inner[data-progress="35"] .circle.visible .mask.full,
@@ -2092,7 +2093,7 @@
   -ms-transform: rotate(126deg);
   transform: rotate(126deg);
 }
-.radial-progress.inner[data-progress="35"] .percentage .numbers {
+.radial-progress.inner[data-progress="35"] .percentage.visible .numbers {
   width: 2052px;
 }
 .radial-progress.inner[data-progress="36"] .circle.visible .mask.full,
@@ -2106,7 +2107,7 @@
   -ms-transform: rotate(129.6deg);
   transform: rotate(129.6deg);
 }
-.radial-progress.inner[data-progress="36"] .percentage .numbers {
+.radial-progress.inner[data-progress="36"] .percentage.visible .numbers {
   width: 2109px;
 }
 .radial-progress.inner[data-progress="37"] .circle.visible .mask.full,
@@ -2120,7 +2121,7 @@
   -ms-transform: rotate(133.2deg);
   transform: rotate(133.2deg);
 }
-.radial-progress.inner[data-progress="37"] .percentage .numbers {
+.radial-progress.inner[data-progress="37"] .percentage.visible .numbers {
   width: 2166px;
 }
 .radial-progress.inner[data-progress="38"] .circle.visible .mask.full,
@@ -2134,7 +2135,7 @@
   -ms-transform: rotate(136.8deg);
   transform: rotate(136.8deg);
 }
-.radial-progress.inner[data-progress="38"] .percentage .numbers {
+.radial-progress.inner[data-progress="38"] .percentage.visible .numbers {
   width: 2223px;
 }
 .radial-progress.inner[data-progress="39"] .circle.visible .mask.full,
@@ -2148,7 +2149,7 @@
   -ms-transform: rotate(140.4deg);
   transform: rotate(140.4deg);
 }
-.radial-progress.inner[data-progress="39"] .percentage .numbers {
+.radial-progress.inner[data-progress="39"] .percentage.visible .numbers {
   width: 2280px;
 }
 .radial-progress.inner[data-progress="40"] .circle.visible .mask.full,
@@ -2162,7 +2163,7 @@
   -ms-transform: rotate(144deg);
   transform: rotate(144deg);
 }
-.radial-progress.inner[data-progress="40"] .percentage .numbers {
+.radial-progress.inner[data-progress="40"] .percentage.visible .numbers {
   width: 2337px;
 }
 .radial-progress.inner[data-progress="41"] .circle.visible .mask.full,
@@ -2176,7 +2177,7 @@
   -ms-transform: rotate(147.6deg);
   transform: rotate(147.6deg);
 }
-.radial-progress.inner[data-progress="41"] .percentage .numbers {
+.radial-progress.inner[data-progress="41"] .percentage.visible .numbers {
   width: 2394px;
 }
 .radial-progress.inner[data-progress="42"] .circle.visible .mask.full,
@@ -2190,7 +2191,7 @@
   -ms-transform: rotate(151.2deg);
   transform: rotate(151.2deg);
 }
-.radial-progress.inner[data-progress="42"] .percentage .numbers {
+.radial-progress.inner[data-progress="42"] .percentage.visible .numbers {
   width: 2451px;
 }
 .radial-progress.inner[data-progress="43"] .circle.visible .mask.full,
@@ -2204,7 +2205,7 @@
   -ms-transform: rotate(154.8deg);
   transform: rotate(154.8deg);
 }
-.radial-progress.inner[data-progress="43"] .percentage .numbers {
+.radial-progress.inner[data-progress="43"] .percentage.visible .numbers {
   width: 2508px;
 }
 .radial-progress.inner[data-progress="44"] .circle.visible .mask.full,
@@ -2218,7 +2219,7 @@
   -ms-transform: rotate(158.4deg);
   transform: rotate(158.4deg);
 }
-.radial-progress.inner[data-progress="44"] .percentage .numbers {
+.radial-progress.inner[data-progress="44"] .percentage.visible .numbers {
   width: 2565px;
 }
 .radial-progress.inner[data-progress="45"] .circle.visible .mask.full,
@@ -2232,7 +2233,7 @@
   -ms-transform: rotate(162deg);
   transform: rotate(162deg);
 }
-.radial-progress.inner[data-progress="45"] .percentage .numbers {
+.radial-progress.inner[data-progress="45"] .percentage.visible .numbers {
   width: 2622px;
 }
 .radial-progress.inner[data-progress="46"] .circle.visible .mask.full,
@@ -2246,7 +2247,7 @@
   -ms-transform: rotate(165.6deg);
   transform: rotate(165.6deg);
 }
-.radial-progress.inner[data-progress="46"] .percentage .numbers {
+.radial-progress.inner[data-progress="46"] .percentage.visible .numbers {
   width: 2679px;
 }
 .radial-progress.inner[data-progress="47"] .circle.visible .mask.full,
@@ -2260,7 +2261,7 @@
   -ms-transform: rotate(169.2deg);
   transform: rotate(169.2deg);
 }
-.radial-progress.inner[data-progress="47"] .percentage .numbers {
+.radial-progress.inner[data-progress="47"] .percentage.visible .numbers {
   width: 2736px;
 }
 .radial-progress.inner[data-progress="48"] .circle.visible .mask.full,
@@ -2274,7 +2275,7 @@
   -ms-transform: rotate(172.8deg);
   transform: rotate(172.8deg);
 }
-.radial-progress.inner[data-progress="48"] .percentage .numbers {
+.radial-progress.inner[data-progress="48"] .percentage.visible .numbers {
   width: 2793px;
 }
 .radial-progress.inner[data-progress="49"] .circle.visible .mask.full,
@@ -2288,7 +2289,7 @@
   -ms-transform: rotate(176.4deg);
   transform: rotate(176.4deg);
 }
-.radial-progress.inner[data-progress="49"] .percentage .numbers {
+.radial-progress.inner[data-progress="49"] .percentage.visible .numbers {
   width: 2850px;
 }
 .radial-progress.inner[data-progress="50"] .circle.visible .mask.full,
@@ -2302,7 +2303,7 @@
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
-.radial-progress.inner[data-progress="50"] .percentage .numbers {
+.radial-progress.inner[data-progress="50"] .percentage.visible .numbers {
   width: 2907px;
 }
 .radial-progress.inner[data-progress="51"] .circle.visible .mask.full,
@@ -2316,7 +2317,7 @@
   -ms-transform: rotate(183.6deg);
   transform: rotate(183.6deg);
 }
-.radial-progress.inner[data-progress="51"] .percentage .numbers {
+.radial-progress.inner[data-progress="51"] .percentage.visible .numbers {
   width: 2964px;
 }
 .radial-progress.inner[data-progress="52"] .circle.visible .mask.full,
@@ -2330,7 +2331,7 @@
   -ms-transform: rotate(187.2deg);
   transform: rotate(187.2deg);
 }
-.radial-progress.inner[data-progress="52"] .percentage .numbers {
+.radial-progress.inner[data-progress="52"] .percentage.visible .numbers {
   width: 3021px;
 }
 .radial-progress.inner[data-progress="53"] .circle.visible .mask.full,
@@ -2344,7 +2345,7 @@
   -ms-transform: rotate(190.8deg);
   transform: rotate(190.8deg);
 }
-.radial-progress.inner[data-progress="53"] .percentage .numbers {
+.radial-progress.inner[data-progress="53"] .percentage.visible .numbers {
   width: 3078px;
 }
 .radial-progress.inner[data-progress="54"] .circle.visible .mask.full,
@@ -2358,7 +2359,7 @@
   -ms-transform: rotate(194.4deg);
   transform: rotate(194.4deg);
 }
-.radial-progress.inner[data-progress="54"] .percentage .numbers {
+.radial-progress.inner[data-progress="54"] .percentage.visible .numbers {
   width: 3135px;
 }
 .radial-progress.inner[data-progress="55"] .circle.visible .mask.full,
@@ -2372,7 +2373,7 @@
   -ms-transform: rotate(198deg);
   transform: rotate(198deg);
 }
-.radial-progress.inner[data-progress="55"] .percentage .numbers {
+.radial-progress.inner[data-progress="55"] .percentage.visible .numbers {
   width: 3192px;
 }
 .radial-progress.inner[data-progress="56"] .circle.visible .mask.full,
@@ -2386,7 +2387,7 @@
   -ms-transform: rotate(201.6deg);
   transform: rotate(201.6deg);
 }
-.radial-progress.inner[data-progress="56"] .percentage .numbers {
+.radial-progress.inner[data-progress="56"] .percentage.visible .numbers {
   width: 3249px;
 }
 .radial-progress.inner[data-progress="57"] .circle.visible .mask.full,
@@ -2400,7 +2401,7 @@
   -ms-transform: rotate(205.2deg);
   transform: rotate(205.2deg);
 }
-.radial-progress.inner[data-progress="57"] .percentage .numbers {
+.radial-progress.inner[data-progress="57"] .percentage.visible .numbers {
   width: 3306px;
 }
 .radial-progress.inner[data-progress="58"] .circle.visible .mask.full,
@@ -2414,7 +2415,7 @@
   -ms-transform: rotate(208.8deg);
   transform: rotate(208.8deg);
 }
-.radial-progress.inner[data-progress="58"] .percentage .numbers {
+.radial-progress.inner[data-progress="58"] .percentage.visible .numbers {
   width: 3363px;
 }
 .radial-progress.inner[data-progress="59"] .circle.visible .mask.full,
@@ -2428,7 +2429,7 @@
   -ms-transform: rotate(212.4deg);
   transform: rotate(212.4deg);
 }
-.radial-progress.inner[data-progress="59"] .percentage .numbers {
+.radial-progress.inner[data-progress="59"] .percentage.visible .numbers {
   width: 3420px;
 }
 .radial-progress.inner[data-progress="60"] .circle.visible .mask.full,
@@ -2442,7 +2443,7 @@
   -ms-transform: rotate(216deg);
   transform: rotate(216deg);
 }
-.radial-progress.inner[data-progress="60"] .percentage .numbers {
+.radial-progress.inner[data-progress="60"] .percentage.visible .numbers {
   width: 3477px;
 }
 .radial-progress.inner[data-progress="61"] .circle.visible .mask.full,
@@ -2456,7 +2457,7 @@
   -ms-transform: rotate(219.6deg);
   transform: rotate(219.6deg);
 }
-.radial-progress.inner[data-progress="61"] .percentage .numbers {
+.radial-progress.inner[data-progress="61"] .percentage.visible .numbers {
   width: 3534px;
 }
 .radial-progress.inner[data-progress="62"] .circle.visible .mask.full,
@@ -2470,7 +2471,7 @@
   -ms-transform: rotate(223.2deg);
   transform: rotate(223.2deg);
 }
-.radial-progress.inner[data-progress="62"] .percentage .numbers {
+.radial-progress.inner[data-progress="62"] .percentage.visible .numbers {
   width: 3591px;
 }
 .radial-progress.inner[data-progress="63"] .circle.visible .mask.full,
@@ -2484,7 +2485,7 @@
   -ms-transform: rotate(226.8deg);
   transform: rotate(226.8deg);
 }
-.radial-progress.inner[data-progress="63"] .percentage .numbers {
+.radial-progress.inner[data-progress="63"] .percentage.visible .numbers {
   width: 3648px;
 }
 .radial-progress.inner[data-progress="64"] .circle.visible .mask.full,
@@ -2498,7 +2499,7 @@
   -ms-transform: rotate(230.4deg);
   transform: rotate(230.4deg);
 }
-.radial-progress.inner[data-progress="64"] .percentage .numbers {
+.radial-progress.inner[data-progress="64"] .percentage.visible .numbers {
   width: 3705px;
 }
 .radial-progress.inner[data-progress="65"] .circle.visible .mask.full,
@@ -2512,7 +2513,7 @@
   -ms-transform: rotate(234deg);
   transform: rotate(234deg);
 }
-.radial-progress.inner[data-progress="65"] .percentage .numbers {
+.radial-progress.inner[data-progress="65"] .percentage.visible .numbers {
   width: 3762px;
 }
 .radial-progress.inner[data-progress="66"] .circle.visible .mask.full,
@@ -2526,7 +2527,7 @@
   -ms-transform: rotate(237.6deg);
   transform: rotate(237.6deg);
 }
-.radial-progress.inner[data-progress="66"] .percentage .numbers {
+.radial-progress.inner[data-progress="66"] .percentage.visible .numbers {
   width: 3819px;
 }
 .radial-progress.inner[data-progress="67"] .circle.visible .mask.full,
@@ -2540,7 +2541,7 @@
   -ms-transform: rotate(241.2deg);
   transform: rotate(241.2deg);
 }
-.radial-progress.inner[data-progress="67"] .percentage .numbers {
+.radial-progress.inner[data-progress="67"] .percentage.visible .numbers {
   width: 3876px;
 }
 .radial-progress.inner[data-progress="68"] .circle.visible .mask.full,
@@ -2554,7 +2555,7 @@
   -ms-transform: rotate(244.8deg);
   transform: rotate(244.8deg);
 }
-.radial-progress.inner[data-progress="68"] .percentage .numbers {
+.radial-progress.inner[data-progress="68"] .percentage.visible .numbers {
   width: 3933px;
 }
 .radial-progress.inner[data-progress="69"] .circle.visible .mask.full,
@@ -2568,7 +2569,7 @@
   -ms-transform: rotate(248.4deg);
   transform: rotate(248.4deg);
 }
-.radial-progress.inner[data-progress="69"] .percentage .numbers {
+.radial-progress.inner[data-progress="69"] .percentage.visible .numbers {
   width: 3990px;
 }
 .radial-progress.inner[data-progress="70"] .circle.visible .mask.full,
@@ -2582,7 +2583,7 @@
   -ms-transform: rotate(252deg);
   transform: rotate(252deg);
 }
-.radial-progress.inner[data-progress="70"] .percentage .numbers {
+.radial-progress.inner[data-progress="70"] .percentage.visible .numbers {
   width: 4047px;
 }
 .radial-progress.inner[data-progress="71"] .circle.visible .mask.full,
@@ -2596,7 +2597,7 @@
   -ms-transform: rotate(255.6deg);
   transform: rotate(255.6deg);
 }
-.radial-progress.inner[data-progress="71"] .percentage .numbers {
+.radial-progress.inner[data-progress="71"] .percentage.visible .numbers {
   width: 4104px;
 }
 .radial-progress.inner[data-progress="72"] .circle.visible .mask.full,
@@ -2610,7 +2611,7 @@
   -ms-transform: rotate(259.2deg);
   transform: rotate(259.2deg);
 }
-.radial-progress.inner[data-progress="72"] .percentage .numbers {
+.radial-progress.inner[data-progress="72"] .percentage.visible .numbers {
   width: 4161px;
 }
 .radial-progress.inner[data-progress="73"] .circle.visible .mask.full,
@@ -2624,7 +2625,7 @@
   -ms-transform: rotate(262.8deg);
   transform: rotate(262.8deg);
 }
-.radial-progress.inner[data-progress="73"] .percentage .numbers {
+.radial-progress.inner[data-progress="73"] .percentage.visible .numbers {
   width: 4218px;
 }
 .radial-progress.inner[data-progress="74"] .circle.visible .mask.full,
@@ -2638,7 +2639,7 @@
   -ms-transform: rotate(266.4deg);
   transform: rotate(266.4deg);
 }
-.radial-progress.inner[data-progress="74"] .percentage .numbers {
+.radial-progress.inner[data-progress="74"] .percentage.visible .numbers {
   width: 4275px;
 }
 .radial-progress.inner[data-progress="75"] .circle.visible .mask.full,
@@ -2652,7 +2653,7 @@
   -ms-transform: rotate(270deg);
   transform: rotate(270deg);
 }
-.radial-progress.inner[data-progress="75"] .percentage .numbers {
+.radial-progress.inner[data-progress="75"] .percentage.visible .numbers {
   width: 4332px;
 }
 .radial-progress.inner[data-progress="76"] .circle.visible .mask.full,
@@ -2666,7 +2667,7 @@
   -ms-transform: rotate(273.6deg);
   transform: rotate(273.6deg);
 }
-.radial-progress.inner[data-progress="76"] .percentage .numbers {
+.radial-progress.inner[data-progress="76"] .percentage.visible .numbers {
   width: 4389px;
 }
 .radial-progress.inner[data-progress="77"] .circle.visible .mask.full,
@@ -2680,7 +2681,7 @@
   -ms-transform: rotate(277.2deg);
   transform: rotate(277.2deg);
 }
-.radial-progress.inner[data-progress="77"] .percentage .numbers {
+.radial-progress.inner[data-progress="77"] .percentage.visible .numbers {
   width: 4446px;
 }
 .radial-progress.inner[data-progress="78"] .circle.visible .mask.full,
@@ -2694,7 +2695,7 @@
   -ms-transform: rotate(280.8deg);
   transform: rotate(280.8deg);
 }
-.radial-progress.inner[data-progress="78"] .percentage .numbers {
+.radial-progress.inner[data-progress="78"] .percentage.visible .numbers {
   width: 4503px;
 }
 .radial-progress.inner[data-progress="79"] .circle.visible .mask.full,
@@ -2708,7 +2709,7 @@
   -ms-transform: rotate(284.4deg);
   transform: rotate(284.4deg);
 }
-.radial-progress.inner[data-progress="79"] .percentage .numbers {
+.radial-progress.inner[data-progress="79"] .percentage.visible .numbers {
   width: 4560px;
 }
 .radial-progress.inner[data-progress="80"] .circle.visible .mask.full,
@@ -2722,7 +2723,7 @@
   -ms-transform: rotate(288deg);
   transform: rotate(288deg);
 }
-.radial-progress.inner[data-progress="80"] .percentage .numbers {
+.radial-progress.inner[data-progress="80"] .percentage.visible .numbers {
   width: 4617px;
 }
 .radial-progress.inner[data-progress="81"] .circle.visible .mask.full,
@@ -2736,7 +2737,7 @@
   -ms-transform: rotate(291.6deg);
   transform: rotate(291.6deg);
 }
-.radial-progress.inner[data-progress="81"] .percentage .numbers {
+.radial-progress.inner[data-progress="81"] .percentage.visible .numbers {
   width: 4674px;
 }
 .radial-progress.inner[data-progress="82"] .circle.visible .mask.full,
@@ -2750,7 +2751,7 @@
   -ms-transform: rotate(295.2deg);
   transform: rotate(295.2deg);
 }
-.radial-progress.inner[data-progress="82"] .percentage .numbers {
+.radial-progress.inner[data-progress="82"] .percentage.visible .numbers {
   width: 4731px;
 }
 .radial-progress.inner[data-progress="83"] .circle.visible .mask.full,
@@ -2764,7 +2765,7 @@
   -ms-transform: rotate(298.8deg);
   transform: rotate(298.8deg);
 }
-.radial-progress.inner[data-progress="83"] .percentage .numbers {
+.radial-progress.inner[data-progress="83"] .percentage.visible .numbers {
   width: 4788px;
 }
 .radial-progress.inner[data-progress="84"] .circle.visible .mask.full,
@@ -2778,7 +2779,7 @@
   -ms-transform: rotate(302.4deg);
   transform: rotate(302.4deg);
 }
-.radial-progress.inner[data-progress="84"] .percentage .numbers {
+.radial-progress.inner[data-progress="84"] .percentage.visible .numbers {
   width: 4845px;
 }
 .radial-progress.inner[data-progress="85"] .circle.visible .mask.full,
@@ -2792,7 +2793,7 @@
   -ms-transform: rotate(306deg);
   transform: rotate(306deg);
 }
-.radial-progress.inner[data-progress="85"] .percentage .numbers {
+.radial-progress.inner[data-progress="85"] .percentage.visible .numbers {
   width: 4902px;
 }
 .radial-progress.inner[data-progress="86"] .circle.visible .mask.full,
@@ -2806,7 +2807,7 @@
   -ms-transform: rotate(309.6deg);
   transform: rotate(309.6deg);
 }
-.radial-progress.inner[data-progress="86"] .percentage .numbers {
+.radial-progress.inner[data-progress="86"] .percentage.visible .numbers {
   width: 4959px;
 }
 .radial-progress.inner[data-progress="87"] .circle.visible .mask.full,
@@ -2820,7 +2821,7 @@
   -ms-transform: rotate(313.2deg);
   transform: rotate(313.2deg);
 }
-.radial-progress.inner[data-progress="87"] .percentage .numbers {
+.radial-progress.inner[data-progress="87"] .percentage.visible .numbers {
   width: 5016px;
 }
 .radial-progress.inner[data-progress="88"] .circle.visible .mask.full,
@@ -2834,7 +2835,7 @@
   -ms-transform: rotate(316.8deg);
   transform: rotate(316.8deg);
 }
-.radial-progress.inner[data-progress="88"] .percentage .numbers {
+.radial-progress.inner[data-progress="88"] .percentage.visible .numbers {
   width: 5073px;
 }
 .radial-progress.inner[data-progress="89"] .circle.visible .mask.full,
@@ -2848,7 +2849,7 @@
   -ms-transform: rotate(320.4deg);
   transform: rotate(320.4deg);
 }
-.radial-progress.inner[data-progress="89"] .percentage .numbers {
+.radial-progress.inner[data-progress="89"] .percentage.visible .numbers {
   width: 5130px;
 }
 .radial-progress.inner[data-progress="90"] .circle.visible .mask.full,
@@ -2862,7 +2863,7 @@
   -ms-transform: rotate(324deg);
   transform: rotate(324deg);
 }
-.radial-progress.inner[data-progress="90"] .percentage .numbers {
+.radial-progress.inner[data-progress="90"] .percentage.visible .numbers {
   width: 5187px;
 }
 .radial-progress.inner[data-progress="91"] .circle.visible .mask.full,
@@ -2876,7 +2877,7 @@
   -ms-transform: rotate(327.6deg);
   transform: rotate(327.6deg);
 }
-.radial-progress.inner[data-progress="91"] .percentage .numbers {
+.radial-progress.inner[data-progress="91"] .percentage.visible .numbers {
   width: 5244px;
 }
 .radial-progress.inner[data-progress="92"] .circle.visible .mask.full,
@@ -2890,7 +2891,7 @@
   -ms-transform: rotate(331.2deg);
   transform: rotate(331.2deg);
 }
-.radial-progress.inner[data-progress="92"] .percentage .numbers {
+.radial-progress.inner[data-progress="92"] .percentage.visible .numbers {
   width: 5301px;
 }
 .radial-progress.inner[data-progress="93"] .circle.visible .mask.full,
@@ -2904,7 +2905,7 @@
   -ms-transform: rotate(334.8deg);
   transform: rotate(334.8deg);
 }
-.radial-progress.inner[data-progress="93"] .percentage .numbers {
+.radial-progress.inner[data-progress="93"] .percentage.visible .numbers {
   width: 5358px;
 }
 .radial-progress.inner[data-progress="94"] .circle.visible .mask.full,
@@ -2918,7 +2919,7 @@
   -ms-transform: rotate(338.4deg);
   transform: rotate(338.4deg);
 }
-.radial-progress.inner[data-progress="94"] .percentage .numbers {
+.radial-progress.inner[data-progress="94"] .percentage.visible .numbers {
   width: 5415px;
 }
 .radial-progress.inner[data-progress="95"] .circle.visible .mask.full,
@@ -2932,7 +2933,7 @@
   -ms-transform: rotate(342deg);
   transform: rotate(342deg);
 }
-.radial-progress.inner[data-progress="95"] .percentage .numbers {
+.radial-progress.inner[data-progress="95"] .percentage.visible .numbers {
   width: 5472px;
 }
 .radial-progress.inner[data-progress="96"] .circle.visible .mask.full,
@@ -2946,7 +2947,7 @@
   -ms-transform: rotate(345.6deg);
   transform: rotate(345.6deg);
 }
-.radial-progress.inner[data-progress="96"] .percentage .numbers {
+.radial-progress.inner[data-progress="96"] .percentage.visible .numbers {
   width: 5529px;
 }
 .radial-progress.inner[data-progress="97"] .circle.visible .mask.full,
@@ -2960,7 +2961,7 @@
   -ms-transform: rotate(349.2deg);
   transform: rotate(349.2deg);
 }
-.radial-progress.inner[data-progress="97"] .percentage .numbers {
+.radial-progress.inner[data-progress="97"] .percentage.visible .numbers {
   width: 5586px;
 }
 .radial-progress.inner[data-progress="98"] .circle.visible .mask.full,
@@ -2974,7 +2975,7 @@
   -ms-transform: rotate(352.8deg);
   transform: rotate(352.8deg);
 }
-.radial-progress.inner[data-progress="98"] .percentage .numbers {
+.radial-progress.inner[data-progress="98"] .percentage.visible .numbers {
   width: 5643px;
 }
 .radial-progress.inner[data-progress="99"] .circle.visible .mask.full,
@@ -2988,7 +2989,7 @@
   -ms-transform: rotate(356.4deg);
   transform: rotate(356.4deg);
 }
-.radial-progress.inner[data-progress="99"] .percentage .numbers {
+.radial-progress.inner[data-progress="99"] .percentage.visible .numbers {
   width: 5700px;
 }
 .radial-progress.inner[data-progress="100"] .circle.visible .mask.full,
@@ -3002,6 +3003,6 @@
   -ms-transform: rotate(360deg);
   transform: rotate(360deg);
 }
-.radial-progress.inner[data-progress="100"] .percentage .numbers {
+.radial-progress.inner[data-progress="100"] .percentage.visible .numbers {
   width: 5757px;
 }

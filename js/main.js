@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  var $circleEl = $('.circle, .numbers');
+  var $circleEl = $('.circle, .percentage');
   $circleEl.viewportChecker({
       classToAdd: 'visible',
       repeat: true,
