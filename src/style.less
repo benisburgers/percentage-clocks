@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
 @dark: #0D1212;
 @inset-color: #ffffff;
-
+@percentage-text-width: 57px;
 
 .dark-bg {
   background-color: black;
@@ -119,32 +119,34 @@
 		margin-left: (@circle-size - @inset-size)/2;
 		margin-top:  (@circle-size - @inset-size)/2;
 	}
+}
 
-	@i: 0;
-	@increment: 180deg / 100;
-	.loop (@i) when (@i <= 100) {
-		&[data-progress="@{i}"] {
-			.circle.visible {
-				.mask.full, .fill {
-					-webkit-transform: rotate(@increment * @i);
-					-ms-transform: rotate(@increment * @i);
-					transform: rotate(@increment * @i);
-				}
-				.fill.fix {
-					-webkit-transform: rotate(@increment * @i * 2);
-					-ms-transform: rotate(@increment * @i * 2);
-					transform: rotate(@increment * @i * 2);
-				}
-			}
-      .percentage.visible {
-        .numbers {
+.clocks-wrapper.visible {
+  .radial-progress {
+    @i: 0;
+    @increment: 180deg / 100;
+    .loop (@i) when (@i <= 100) {
+      &[data-progress="@{i}"] {
+        .circle {
+          .mask.full, .fill {
+            -webkit-transform: rotate(@increment * @i);
+            -ms-transform: rotate(@increment * @i);
+            transform: rotate(@increment * @i);
+          }
+          .fill.fix {
+            -webkit-transform: rotate(@increment * @i * 2);
+            -ms-transform: rotate(@increment * @i * 2);
+            transform: rotate(@increment * @i * 2);
+          }
+        }
+        .percentage .numbers {
           width: @i * @percentage-text-width + @percentage-text-width;
         }
       }
-		}
-		.loop(@i + 1);
-	}
-	.loop(@i);
+      .loop(@i + 1);
+    }
+    .loop(@i);
+  }
 }
 
 .radial-progress.inner {
@@ -152,7 +154,6 @@
 	@inset-size: 180px;
   @circle-background: rgba(230, 70, 64, 0.25);
   @circle-color: #E64640;
-  @percentage-text-width: 57px;
 
 	width:  @circle-size;
 	height: @circle-size;
@@ -179,28 +180,4 @@
 		margin-left: (@circle-size - @inset-size)/2;
 		margin-top:  (@circle-size - @inset-size)/2;
 	}
-
-	@i: 0;
-	@increment: 180deg / 100;
-	.loop (@i) when (@i <= 100) {
-		&[data-progress="@{i}"] {
-			.circle.visible {
-				.mask.full, .fill {
-					-webkit-transform: rotate(@increment * @i);
-					-ms-transform: rotate(@increment * @i);
-					transform: rotate(@increment * @i);
-				}
-				.fill.fix {
-					-webkit-transform: rotate(@increment * @i * 2);
-					-ms-transform: rotate(@increment * @i * 2);
-					transform: rotate(@increment * @i * 2);
-				}
-			}
-			.percentage.visible .numbers {
-				width: @i * @percentage-text-width + @percentage-text-width;
-			}
-		}
-		.loop(@i + 1);
-	}
-	.loop(@i);
 }

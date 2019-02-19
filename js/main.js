@@ -1,9 +1,9 @@
 $(document).ready(function() {
-  var $circleEl = $('.circle, .percentage');
+  var $circleEl = $('.clocks-wrapper');
   $circleEl.viewportChecker({
       classToAdd: 'visible',
       repeat: true,
-      offset: '-1%',
+      offset: '5%',
       invertBottomOffset: true,
   });
 });
