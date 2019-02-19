@@ -3,7 +3,7 @@ $(document).ready(function() {
   $circleEl.viewportChecker({
       classToAdd: 'visible',
       repeat: true,
-      offset: '5%',
+      offset: '10%',
       invertBottomOffset: true,
   });
 });
