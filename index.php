@@ -27,32 +27,7 @@
   <!-- Add your site or application content here -->
 
 	<!-- setupRing(inner, outer, term) -->
-
   <?php setupRing(99, 93, 'Middle & Top Management'); ?>
-  <?php setupRing(98, 91, 'All Management Levels'); ?>
-  <?php setupRing(96, 87, 'All Employees'); ?><?php setupRing(99, 93, 'Middle & Top Management'); ?>
-  <?php setupRing(98, 91, 'All Management Levels'); ?>
-  <?php setupRing(96, 87, 'All Employees'); ?><?php setupRing(99, 93, 'Middle & Top Management'); ?>
-  <?php setupRing(98, 91, 'All Management Levels'); ?>
-  <?php setupRing(96, 87, 'All Employees'); ?><?php setupRing(99, 93, 'Middle & Top Management'); ?>
-  <?php setupRing(98, 91, 'All Management Levels'); ?>
-  <?php setupRing(96, 87, 'All Employees'); ?><?php setupRing(99, 93, 'Middle & Top Management'); ?>
-  <?php setupRing(98, 91, 'All Management Levels'); ?>
-  <?php setupRing(96, 87, 'All Employees'); ?><?php setupRing(99, 93, 'Middle & Top Management'); ?>
-  <?php setupRing(98, 91, 'All Management Levels'); ?>
-  <?php setupRing(96, 87, 'All Employees'); ?><?php setupRing(99, 93, 'Middle & Top Management'); ?>
-  <?php setupRing(98, 91, 'All Management Levels'); ?>
-  <?php setupRing(96, 87, 'All Employees'); ?><?php setupRing(99, 93, 'Middle & Top Management'); ?>
-  <?php setupRing(98, 91, 'All Management Levels'); ?>
-  <?php setupRing(96, 87, 'All Employees'); ?><?php setupRing(99, 93, 'Middle & Top Management'); ?>
-  <?php setupRing(98, 91, 'All Management Levels'); ?>
-  <?php setupRing(96, 87, 'All Employees'); ?><?php setupRing(99, 93, 'Middle & Top Management'); ?>
-  <?php setupRing(98, 91, 'All Management Levels'); ?>
-  <?php setupRing(96, 87, 'All Employees'); ?><?php setupRing(99, 93, 'Middle & Top Management'); ?>
-  <?php setupRing(98, 91, 'All Management Levels'); ?>
-  <?php setupRing(96, 87, 'All Employees'); ?><?php setupRing(99, 93, 'Middle & Top Management'); ?>
-  <?php setupRing(98, 91, 'All Management Levels'); ?>
-  <?php setupRing(96, 87, 'All Employees'); ?>
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>

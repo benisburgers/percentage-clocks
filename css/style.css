@@ -106,6 +106,8 @@
 .radial-progress .circle .fill,
 .radial-progress .circle .shadow {
   position: absolute;
+}
+.radial-progress .circle .fill {
   border-radius: 50%;
 }
 .radial-progress .circle .shadow {
@@ -117,7 +119,6 @@
   transition: -webkit-transform 2s;
   transition: -ms-transform 2s;
   transition: transform 2s;
-  border-radius: 50%;
 }
 .radial-progress .inset {
   position: absolute;

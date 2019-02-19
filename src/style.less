@@ -62,8 +62,10 @@
 	.circle {
 		.mask, .fill, .shadow {
 			position: absolute;
-			border-radius: 50%;
 		}
+    .fill {
+      border-radius: 50%;
+    }
 		.shadow {
 			box-shadow: @shadow inset;
 		}
@@ -72,7 +74,6 @@
 			transition: -webkit-transform @transition-length;
 			transition: -ms-transform @transition-length;
 			transition: transform @transition-length;
-			border-radius: 50%;
 		}
 	}
 	.inset {
