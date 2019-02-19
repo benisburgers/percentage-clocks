@@ -29,44 +29,42 @@
 	<!-- setupRing(inner, outer, term) -->
 	<?php setupRing(99, 93, 'Middle & Top Management'); ?>
 	<?php setupRing(99, 93, 'Middle & Top Management'); ?>
-	<?php setupRing(99, 93, 'Middle & Top Management'); ?>
-	<?php setupRing(99, 93, 'Middle & Top Management'); ?>
-	<?php setupRing(99, 93, 'Middle & Top Management'); ?>
-	<?php setupRing(99, 93, 'Middle & Top Management'); ?>
-	<?php setupRing(99, 93, 'Middle & Top Management'); ?>
-	<?php setupRing(99, 93, 'Middle & Top Management'); ?>
-	<?php setupRing(99, 93, 'Middle & Top Management'); ?>
-	<?php setupRing(99, 93, 'Middle & Top Management'); ?>
-	<?php setupRing(99, 93, 'Middle & Top Management'); ?>
-	<?php setupRing(99, 93, 'Middle & Top Management'); ?>
-	<?php setupRing(99, 93, 'Middle & Top Management'); ?>
-	<?php setupRing(99, 93, 'Middle & Top Management'); ?>
-	<?php setupRing(99, 93, 'Middle & Top Management'); ?>
-	<?php setupRing(99, 93, 'Middle & Top Management'); ?>
-	<?php setupRing(99, 93, 'Middle & Top Management'); ?>
-	<?php setupRing(99, 93, 'Middle & Top Management'); ?>
-	<?php setupRing(99, 93, 'Middle & Top Management'); ?>
-	<?php setupRing(99, 93, 'Middle & Top Management'); ?>
-	<?php setupRing(99, 93, 'Middle & Top Management'); ?>
-	<?php setupRing(99, 93, 'Middle & Top Management'); ?>
-	<?php setupRing(99, 93, 'Middle & Top Management'); ?>
-	<?php setupRing(99, 93, 'Middle & Top Management'); ?>
-	<?php setupRing(99, 93, 'Middle & Top Management'); ?>
-	<?php setupRing(99, 93, 'Middle & Top Management'); ?>
-	<?php setupRing(99, 93, 'Middle & Top Management'); ?>
-  <?php setupRing(99, 93, 'Middle & Top Management'); ?>
+	<?php setupRing(99, 93, 'Middle & Top Management'); ?>	<?php setupRing(99, 93, 'Middle & Top Management'); ?>
+		<?php setupRing(99, 93, 'Middle & Top Management'); ?>
+		<?php setupRing(99, 93, 'Middle & Top Management'); ?>	<?php setupRing(99, 93, 'Middle & Top Management'); ?>
+			<?php setupRing(99, 93, 'Middle & Top Management'); ?>
+			<?php setupRing(99, 93, 'Middle & Top Management'); ?>	<?php setupRing(99, 93, 'Middle & Top Management'); ?>
+				<?php setupRing(99, 93, 'Middle & Top Management'); ?>
+				<?php setupRing(99, 93, 'Middle & Top Management'); ?>	<?php setupRing(99, 93, 'Middle & Top Management'); ?>
+					<?php setupRing(99, 93, 'Middle & Top Management'); ?>
+					<?php setupRing(99, 93, 'Middle & Top Management'); ?>	<?php setupRing(99, 93, 'Middle & Top Management'); ?>
+						<?php setupRing(99, 93, 'Middle & Top Management'); ?>
+						<?php setupRing(99, 93, 'Middle & Top Management'); ?>	<?php setupRing(99, 93, 'Middle & Top Management'); ?>
+							<?php setupRing(99, 93, 'Middle & Top Management'); ?>
+							<?php setupRing(99, 93, 'Middle & Top Management'); ?>	<?php setupRing(99, 93, 'Middle & Top Management'); ?>
+								<?php setupRing(99, 93, 'Middle & Top Management'); ?>
+								<?php setupRing(99, 93, 'Middle & Top Management'); ?>
+
 
 	<div class="horizontal-bar-container" data-percentage="0">
 		<div class="title">
-			<span></span>
+			<span>title</span>
 		</div>
 		<div class="bar">
 			<div class="bar-background">
+				<div class="bar-foreground bar-transition">
+					<span class="percentage-left"></span>
+				</div>
+				<span class="percentage-right"></span>
 			</div>
-			<div class="bar-foreground">
+			<div class="bar-text">
+				<span class="text-left">50%</span>
+				<span class="text-right">50%</span>
 			</div>
 		</div>
 	</div>
+
+	<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
