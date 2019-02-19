@@ -56,6 +56,19 @@
 	<?php setupRing(99, 93, 'Middle & Top Management'); ?>
   <?php setupRing(99, 93, 'Middle & Top Management'); ?>
 
+	<div class="horizontal-bar-container" data-percentage="0">
+		<div class="title">
+			<span></span>
+		</div>
+		<div class="bar">
+			<div class="bar-background">
+			</div>
+			<div class="bar-foreground">
+			</div>
+		</div>
+	</div>
+
+
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
