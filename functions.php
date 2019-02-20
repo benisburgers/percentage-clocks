@@ -1,9 +1,6 @@
 <?php
 
-function setupRing($value1, $value2, $value3 = null) {
-	$percentageInner = $value1;
-	$percentageOuter = $value2;
-	$chartTerm = $value3;
+function setupRing($percentageInner, $percentageOuter, $chartTerm = null) {
 
   echo '
   <div class="clocks-wrapper" id="' . $chartTerm . '">
