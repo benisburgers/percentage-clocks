@@ -23,7 +23,7 @@ $percentage-text-width: 57px;
 
 //The initital .radial-progress is the smaller one inside
 .radial-progress {
-	$transition-length: 2s;
+	$transition-length: 1s;
 	$shadow: 6px 6px 10px rgba(0,0,0,0);
 	$percentage-font-size: 22px;
 	$percentage-text-width: 57px;
@@ -212,6 +212,7 @@ $percentage-text-width: 57px;
     background: blue;
     border-radius: 9px;
     position: absolute;
+    overflow: hidden;
   }
   .bar-foreground {
     display: inline-block;
@@ -219,6 +220,6 @@ $percentage-text-width: 57px;
     height: 100%;
     background: purple;
     border-radius: 9px 0 0 9px;
-    transition: width 3s;
+    transition: width 1s ease-in-out;
   }
 }

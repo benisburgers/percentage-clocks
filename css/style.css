@@ -39,7 +39,7 @@
 }
 .radial-progress .percentage .numbers {
   margin-top: -22px;
-  transition: width 2s;
+  transition: width 1s;
   width: 0;
 }
 .radial-progress .percentage .numbers span {
@@ -56,9 +56,9 @@
 }
 .radial-progress .circle .mask, .radial-progress .circle .fill {
   -webkit-backface-visibility: hidden;
-  transition: -webkit-transform 2s;
-  transition: -ms-transform 2s;
-  transition: transform 2s;
+  transition: -webkit-transform 1s;
+  transition: -ms-transform 1s;
+  transition: transform 1s;
 }
 .radial-progress .inset {
   position: absolute;
@@ -1465,6 +1465,7 @@
   background: blue;
   border-radius: 9px;
   position: absolute;
+  overflow: hidden;
 }
 .horizontal-bar-container .bar-foreground {
   display: inline-block;
@@ -1472,7 +1473,7 @@
   height: 100%;
   background: purple;
   border-radius: 9px 0 0 9px;
-  transition: width 3s;
+  transition: width 1s ease-in-out;
 }
 
 /*# sourceMappingURL=style.css.map */

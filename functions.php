@@ -45,3 +45,27 @@ function setupRing($value1, $value2, $value3 = null) {
   </div>
   ';
 }
+
+function setupHorizontalBar($barTitle, $barPercentage) {
+	echo
+	'
+	<div class="horizontal-bar-container" data-percentage="' . $barPercentage . '">
+		<div class="title">
+			<span>' . $barTitle . '</span>
+		</div>
+		<div class="bar">
+			<div class="bar-background">
+				<div class="bar-foreground bar-transition">
+					<span class="percentage-left"></span>
+				</div>
+				<span class="percentage-right"></span>
+			</div>
+			<div class="bar-text">
+				<span class="text-left">50%</span>
+				<span class="text-right">50%</span>
+			</div>
+		</div>
+	</div>
+
+	';
+}

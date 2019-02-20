@@ -28,41 +28,12 @@
 
 	<!-- setupRing(inner, outer, term) -->
 	<?php setupRing(99, 93, 'Middle & Top Management'); ?>
-	<?php setupRing(99, 93, 'Middle & Top Management'); ?>
-	<?php setupRing(99, 93, 'Middle & Top Management'); ?>	<?php setupRing(99, 93, 'Middle & Top Management'); ?>
-		<?php setupRing(99, 93, 'Middle & Top Management'); ?>
-		<?php setupRing(99, 93, 'Middle & Top Management'); ?>	<?php setupRing(99, 93, 'Middle & Top Management'); ?>
-			<?php setupRing(99, 93, 'Middle & Top Management'); ?>
-			<?php setupRing(99, 93, 'Middle & Top Management'); ?>	<?php setupRing(99, 93, 'Middle & Top Management'); ?>
-				<?php setupRing(99, 93, 'Middle & Top Management'); ?>
-				<?php setupRing(99, 93, 'Middle & Top Management'); ?>	<?php setupRing(99, 93, 'Middle & Top Management'); ?>
-					<?php setupRing(99, 93, 'Middle & Top Management'); ?>
-					<?php setupRing(99, 93, 'Middle & Top Management'); ?>	<?php setupRing(99, 93, 'Middle & Top Management'); ?>
-						<?php setupRing(99, 93, 'Middle & Top Management'); ?>
-						<?php setupRing(99, 93, 'Middle & Top Management'); ?>	<?php setupRing(99, 93, 'Middle & Top Management'); ?>
-							<?php setupRing(99, 93, 'Middle & Top Management'); ?>
-							<?php setupRing(99, 93, 'Middle & Top Management'); ?>	<?php setupRing(99, 93, 'Middle & Top Management'); ?>
-								<?php setupRing(99, 93, 'Middle & Top Management'); ?>
-								<?php setupRing(99, 93, 'Middle & Top Management'); ?>
+	<?php setupRing(98, 91, 'All Management Levels'); ?>
+	<?php setupRing(96, 87, 'All Employees'); ?>
 
-
-	<div class="horizontal-bar-container" data-percentage="0">
-		<div class="title">
-			<span>title</span>
-		</div>
-		<div class="bar">
-			<div class="bar-background">
-				<div class="bar-foreground bar-transition">
-					<span class="percentage-left"></span>
-				</div>
-				<span class="percentage-right"></span>
-			</div>
-			<div class="bar-text">
-				<span class="text-left">50%</span>
-				<span class="text-right">50%</span>
-			</div>
-		</div>
-	</div>
+	<?php setupHorizontalBar('Crocodiles', 85); ?>
+	<?php setupHorizontalBar('Elephants', 13); ?>
+	<?php setupHorizontalBar('Mackarels', 24); ?>
 
 	<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
