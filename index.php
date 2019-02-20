@@ -30,10 +30,16 @@
 	<?php setupRing(99, 93, 'Middle & Top Management'); ?>
 	<?php setupRing(98, 91, 'All Management Levels'); ?>
 	<?php setupRing(96, 87, 'All Employees'); ?>
-
-	<?php setupHorizontalBar('Crocodiles', 85); ?>
-	<?php setupHorizontalBar('Elephants', 13); ?>
-	<?php setupHorizontalBar('Mackarels', 24); ?>
+	<?php setupRing(98, 91, 'All Management Levels'); ?>
+	<?php setupRing(96, 87, 'All Employees'); ?>
+	<?php setupRing(98, 91, 'All Management Levels'); ?>
+	<?php setupRing(96, 87, 'All Employees'); ?>
+	<?php setupRing(98, 91, 'All Management Levels'); ?>
+	<?php setupRing(96, 87, 'All Employees'); ?>
+	<?php setupRing(98, 91, 'All Management Levels'); ?>
+	<?php setupRing(96, 87, 'All Employees'); ?>
+	<?php setupRing(98, 91, 'All Management Levels'); ?>
+	<?php setupRing(96, 87, 'All Employees'); ?>
 
 	<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
